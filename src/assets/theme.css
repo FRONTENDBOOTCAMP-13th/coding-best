@@ -1,0 +1,37 @@
+/* 데스크탑 루트설정 */
+:root {
+  --font-title: "Noto Sans", sans-serif;
+  --font-title-weight: 900; /*black*/
+  --font-title-size: 70px;
+
+  --font-menu: "Noto Sans", sans-serif;
+  --font-menu-weight: 900; /*black*/
+  --font-menu-size: 18px;
+
+  --font-subtitle: "Noto Sans", sans-serif;
+  --font-subtitle-weight: 600; /*semi-bold*/
+  --font-subtitle-size: 50px;
+
+  --font-body: "Noto Sans KR", sans-serif;
+  --font-body-weight: 400; /*regular*/
+  --font-body-size: 24px;
+
+  --font-footer: "Noto Sans KR", sans-serif;
+  --font-footer-weight: 300; /*light*/
+  --font-footer-size: 18px;
+
+  --font-sidebar: "Noto Sans", sans-serif;
+  --font-sidebar-weight: 700; /*bold*/
+  --font-sidebar-size: 15px;
+
+  --spacing-left: 200px;
+  --spacing-right: 145px;
+  --spacing-top: 200px;
+  --spacing-bottom: 200px;
+  --nav-spacing: 157px;
+  --nav-top-margin: 90px;
+  --sidebar-top-margin: 615px;
+  --sidebar-left-margin: 40px;
+  --subtitle-content-gap: 80px;
+  --gallery-gap: 38px;
+}
