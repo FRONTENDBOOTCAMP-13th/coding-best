@@ -1,0 +1,43 @@
+/* 모바일 About me */
+.aboutme-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(240, 240, 240);
+  width: 280px;
+  height: 445px;
+  border-top-right-radius: 50px;
+  border-end-start-radius: 50px;
+}
+
+.aboutme-thumbnail-image {
+  background-color: gray;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.aboutme-thumbnail-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+
+  .aboutme-thumbnail-name {
+    color: black;
+    margin: 0;
+  }
+
+  .aboutme-thumbnail-text {
+    width: 180px;
+    height: auto;
+    word-break: break-word;
+    color: black;
+  }
+}
+
+.aboutme-mobile:hover {
+  box-shadow: 5px 5px 10px gray;
+}
