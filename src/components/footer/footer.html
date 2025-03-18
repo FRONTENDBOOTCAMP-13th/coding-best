@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Footer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <footer>
+      <!-- 뷰포트가 768px 이하일때 -->
+      <nav class="footer-nav">
+        <a href="#" class="footer-item">
+          <img src="/src/assets/home_logo.svg" alt="home" />
+          <span>HOME</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
+          <span>ABOUT ME</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/references_logo.svg" alt="references" />
+          <span>REFERENCES</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/gallery_logo.svg" alt="gallery" />
+          <span>GALLERY</span>
+        </a>
+      </nav>
+
+      <!-- 뷰포트가 768px 이상일때 -->
+      <div class="footer-container">
+        <p>
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+          <br />
+          © 2025 IMWA. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
