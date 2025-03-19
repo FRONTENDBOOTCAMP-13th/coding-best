@@ -1,5 +1,14 @@
-/* 데스크탑 루트설정 */
 :root {
+  /* 폰트스타일 및 weight 설정 */
+  --font-family: "Noto Sans KR", sans-serif;
+  --font-weight-light: 300; /* Light */
+  --font-weight-regular: 400; /* Regular */
+  --font-weight-medium: 500; /* Medium */
+  --font-weight-semi-bold: 600; /* SemiBold */
+  --font-weight-bold: 700; /* Bold */
+  --font-weight-black: 900; /* Black */
+
+  /* 데스크탑 루트설정!!!! */
   --font-title: "Noto Sans", sans-serif;
   --font-title-weight: 900; /*black*/
   --font-title-size: 70px;
@@ -34,4 +43,133 @@
   --sidebar-left-margin: 40px;
   --subtitle-content-gap: 80px;
   --gallery-gap: 38px;
+
+  /* 모바일 루트설정*/
+
+  /* [Home] 페이지 */
+  --m-nav-gap: 117px;
+  --m-nav-top: 35px;
+  --m-nav-side: 105px;
+  --m-nav-icon-size-1: 37px;
+  --m-nav-icon-size-2: 37px;
+  --m-nav-icon-size-3: 40px;
+  --m-nav-icon-size-4: 40px;
+  --m-about-margin: 80px;
+  --m-about-gap: 48px;
+  --m-about-body-margin: 120px 80px;
+
+  /* [Home-GALLERY] */
+  --m-gallery-w: 290px;
+  --m-gallery-h: 375px;
+  --m-gallery-radius: 20px;
+  --m-gallery-img-h: 275px;
+  --m-gallery-img-radius: 20px;
+  --m-gallery-profile-top: 225px;
+  --m-gallery-profile-size: 85px;
+  --m-gallery-profile-fs: x-large;
+  --m-gallery-profile-mt: 0px;
+  --m-gallery-profile-radius: 50%;
+  --m-gallery-profile-fw: 600; /* SemiBold */
+
+  /* [Home-REFERENCES] */
+  --m-ref-w: 608px;
+  --m-ref-h: 178px;
+  --m-ref-radius: 20px;
+  --m-ref-img-w: 250px;
+  --m-ref-img-h: 130px;
+  --m-ref-img-m: 25px;
+  --m-ref-img-radius: 20px;
+  --m-ref-gap: 10px;
+  --m-ref-content-w: 35px;
+  --m-ref-content-h: 35px;
+  --m-ref-name-fs: medium;
+  --m-ref-title-fs: x-large;
+  --m-ref-profile-radius: 50%;
+
+  /* [Home-ABOUT ME] */
+  --m-about-w: 280px;
+  --m-about-h: 445px;
+  --m-about-radius-tr: 50px;
+  --m-about-radius-bl: 50px;
+  --m-about-img-w: 180px;
+  --m-about-img-h: 180px;
+  --m-about-img-radius: 50%;
+  --m-about-img-mt: 50px;
+  --m-about-img-m: 0px;
+
+  /* [공통] */
+  --m-frame-shadow: 5px 5px 10px gray;
+  --m-frame-border: 0.1rem solid gainsboro;
+  --m-frame-radius: 20px;
+  --m-frame-radius-circle: 50%;
+
+  /* [Gallery] 페이지 */
+  --m-gallery-width: 700px;
+  --m-gallery-height: 1040px;
+  --m-gallery-font-size: 35px;
+  --m-gallery-margin: 34px;
+  --m-gallery-nav-gap: 44px;
+
+  /* [References] 페이지 */
+  --m-references-width: 700px;
+  --m-references-height: 1035px;
+  --m-references-btn-height: 35px;
+  --m-references-font-size: 35px;
+  --m-references-margin: 34px;
+  --m-references-nav-gap: 44px;
+
+  /* [Button 컴포넌트 폰트] */
+  /* 웹 */
+  --m-btn-see-all-size: 40px;
+  --m-btn-see-all-weight: 600; /* SemiBold */
+
+  --m-btn-ref-file-size: 20px;
+  --m-btn-ref-file-weight: 700; /* Bold */
+
+  --m-btn-ref-title-size: 25px;
+  --m-btn-ref-title-weight: 500; /* Medium */
+
+  --m-btn-ref-source-size: 20px;
+  --m-btn-ref-source-weight: 500; /* Medium */
+
+  --m-btn-skills-size: 24px;
+  --m-btn-skills-weight: 500; /* Medium */
+
+  /* 모바일 */
+  --m-btn-see-all-size: 22px;
+  --m-btn-see-all-weight: 600; /* SemiBold */
+
+  --m-btn-ref-file-size: 13px;
+  --m-btn-ref-file-weight: 700; /* Bold */
+
+  --m-btn-ref-title-size: 16px;
+  --m-btn-ref-title-weight: 500; /* Medium */
+
+  --m-btn-ref-source-size: 14px;
+  --m-btn-ref-source-weight: 500; /* Medium */
+
+  --m-btn-skills-size: 16px;
+  --m-btn-skills-weight: 500; /* Medium */
+
+  /* [Skills 컴포넌트 크기] */
+  /* 웹 */
+  --m-skills-circle-size: 270px;
+  --m-skills-gap: 50px;
+  --m-skills-text-gap: 50px;
+  --m-skills-logo-text-gap: 20px;
+
+  /* 모바일 */
+  --m-skills-circle-size-m: 615px;
+  --m-skills-gap-m: 25px;
+  --m-skills-text-gap-m: 25px;
+  --m-skills-logo-text-gap-m: 10px;
+
+  /* [Portfolio 컴포넌트] */
+  --m-portfolio-width: 285px;
+  --m-portfolio-height: 370px;
+  --m-portfolio-img-width: 285px;
+  --m-portfolio-img-height: 265px;
+  --m-portfolio-title-size: 24px;
+  --m-portfolio-title-weight: 500; /* Medium */
+  --m-portfolio-title-top: 35px;
 }
