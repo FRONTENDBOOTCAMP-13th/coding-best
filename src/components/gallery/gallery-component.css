@@ -1,0 +1,43 @@
+.gallery-component {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  height: 375px;
+  border-radius: 20px;
+  border: 0.1rem solid gainsboro;
+  text-decoration: none;
+}
+.gallery-img {
+  width: 290px;
+  height: 275px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.gallery-profile {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 225px;
+  width: fit-content;
+
+  .gallery-profile-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+  .gallery-name {
+    color: black;
+    font-size: x-large;
+    margin-top: 0px;
+  }
+}
+
+.gallery-component:hover {
+  box-shadow: 5px 5px 10px gray;
+}
