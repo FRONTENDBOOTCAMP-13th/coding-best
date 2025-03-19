@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="/src/pages/about-detail/about-detail.css" />
+  </head>
+  <body class="body-wrapper">
+    <div class="background-container">
+      <img
+        src="/images/home.png"
+        alt="홈 배경 이미지"
+        class="background-image"
+      />
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li>
+            <img class="userlogo" src="/public/images/user.svg" alt="user" />
+            <a href="#">ABOUT </a>
+          </li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h1>"Hello World" <br />Dreams come true</h1>
+      <div>
+        <img src="/images/homeline.png" alt="line" class="homeline" />
+      </div>
+      <div>
+        <img src="/images/homecheck.png" alt="check" class="homecheck" />
+      </div>
+    </div>
+
+    <footer>
+      <!-- 뷰포트가 768px 이하일때 -->
+      <nav class="footer-nav">
+        <a href="#" class="footer-item">
+          <img src="/src/assets/home_logo.svg" alt="home" />
+          <span>HOME</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
+          <span>ABOUT ME</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/references_logo.svg" alt="references" />
+          <span>REFERENCES</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/gallery_logo.svg" alt="gallery" />
+          <span>GALLERY</span>
+        </a>
+      </nav>
+
+      <!-- 뷰포트가 768px 이상일때 -->
+      <div class="footer-container">
+        <p>
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+          <br />
+          © 2025 IMWA. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="home.js"></script>
+  </body>
+</html>
