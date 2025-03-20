@@ -1,0 +1,153 @@
+@import url("/src/assets/resets/theme.css");
+
+/* body-wrappers 컴포넌트 */
+.body-wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: white;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* header 컴포넌트*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  gap: var(--nav-spacing);
+  margin-top: var(--nav-top-margin);
+  text-align: center;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--nav-spacing);
+}
+
+nav ul li a {
+  font-family: var(--font-menu);
+  font-weight: var(--font-menu-weight);
+  font-size: var(--font-menu-size);
+  color: white;
+  text-decoration: none;
+}
+
+/* sidebar 컴포넌트트*/
+.sidebar {
+  position: fixed;
+  top: var(--nav-top-margin);
+  left: 0;
+  width: 120px;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: var(--nav-top-margin);
+  z-index: 1000;
+}
+
+.sidebar nav ul {
+  flex-direction: column;
+  font-family: var(--font-sidebar);
+  font-weight: var(--font-sidebar-weight);
+  font-size: var(--font-sidebar-size);
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* container 컴포넌트 */
+.container {
+  text-align: center;
+  font-size: var(--font-body-size);
+  border-radius: 10px;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  position: absolute;
+  top: 19rem;
+}
+
+.homeline {
+  width: 130%;
+  position: absolute;
+  top: 14rem;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.homecheck {
+  width: 6%;
+  position: absolute;
+  top: 38rem;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+body.scrolled .container {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 120vh;
+  width: 100%;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-body-size);
+  font-weight: bold;
+  color: black;
+  transition: width 0.3s ease;
+}
+
+.card:hover {
+  width: 280px;
+}
+
+.footer-container {
+  font-family: var(--font-footer);
+  font-weight: var(--font-footer-weight);
+  font-size: var(--font-footer-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  line-height: 1.6;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
