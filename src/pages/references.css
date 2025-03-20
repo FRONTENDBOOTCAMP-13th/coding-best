@@ -1,8 +1,95 @@
 @import url(/src/components/footer/footer.css);
 @import url(/src/assets/theme.css);
 
-.refer-box {
+body * {
+  font-family: var(--font-family);
+}
+
+.background {
+  background-image: url(/src/assets/);
+}
+
+.container {
+  /* border: 1px solid white; */
+  background: black;
+  margin: 30px;
+
   .title {
-    color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .folder {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* 모든 탭 버튼 공통 스타일 */
+  .tab {
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -15px;
+    position: relative;
+    z-index: 1;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black; /* 탭 글씨 색상 (이미지에 맞춰 수정) */
+  }
+
+  /* 첫 탭 왼쪽 마진 제거 */
+  .tab:first-of-type {
+    margin-left: 25px;
+  }
+
+  /* 기본(비활성화) 이미지 설정 */
+  .css-tab {
+    background-image: url(/src/assets/reference\(60\)_mob.svg);
+  }
+
+  .html-tab {
+    background-image: url(/src/assets/reference\(60\)_mob.svg);
+  }
+
+  .git-tab {
+    background-image: url(/src/assets/reference\(60\)_mob.svg);
+  }
+
+  /* 활성화된 탭의 배경 이미지만 변경 */
+
+  /* CSS탭 활성화 이미지 */
+  #css-tab:checked ~ .css-tab {
+    background-image: url("/src/assets/reference\(100\)_mob.svg");
+    z-index: 2;
+  }
+
+  /* HTML탭 활성화 이미지 */
+  #html-tab:checked ~ .html-tab {
+    background-image: url("/src/assets/reference\(100\)_mob.svg");
+    z-index: 2;
+  }
+
+  /* GIT탭 활성화 이미지 */
+  #git-tab:checked ~ .git-tab {
+    background-image: url("/src/assets/reference\(100\)_mob.svg");
+    z-index: 2;
+  }
+
+  /* 탭 하단 콘텐츠 영역 스타일 (탭과 연결된 느낌) */
+  .content {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -10px; /* 탭과 자연스럽게 연결 */
   }
 }

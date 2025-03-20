@@ -7,13 +7,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/pages/references.css" />
   </head>
-  <body>
-    <div class="refer-box">
+  <body class="background">
+    <!-- 전체 컨테이너 -->
+    <div class="container">
       <!-- 타이틀: REFERENCES -->
       <header class="title">
         <h1>REFERENCES</h1>
       </header>
-      <img src="/src/assets/reference(100)_mob.svg" alt="css 레퍼런스 리스트 버튼" />
+
+      <!-- 컨텐츠 -->
+      <main class="folder">
+        <!-- 탭 버튼용 radio -->
+        <input type="radio" name="tab" id="css-tab" checked hidden />
+        <input type="radio" name="tab" id="html-tab" hidden />
+        <input type="radio" name="tab" id="git-tab" hidden />
+
+        <!-- 탭 버튼 라벨 -->
+        <label for="css-tab" class="tab css-tab">CSS</label>
+        <label for="html-tab" class="tab html-tab">HTML</label>
+        <label for="git-tab" class="tab git-tab">GIT</label>
+
+        <!-- 콘텐츠 박스를 탭 버튼과 함께 같은 main에 넣어 자연스럽게 보이도록 구현 -->
+        <section class="content">
+          <div class="content-inner">
+            <!-- 실제 콘텐츠 내용 -->
+          </div>
+        </section>
+      </main>
     </div>
     <footer>
       <!-- 뷰포트가 768px 이하일때 -->
