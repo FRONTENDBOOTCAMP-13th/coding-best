@@ -163,16 +163,18 @@ body {
 .home-nav-box {
   display: flex;
   flex-flow: column wrap;
-  width: 120px;
+  width: 110px;
   height: 500px;
   background-color: #000000;
-  opacity: 50%;
+  opacity: 40%;
   align-items: center;
   justify-content: center;
   gap: 50px;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   z-index: 10;
 
   .home-nav {
@@ -201,7 +203,7 @@ body {
 
     .home-nav-name {
       font-weight: var(--font-weight-semi-bold, 600);
-      font-size: 15px;
+      font-size: 13px;
       color: #ffffff;
       opacity: 70%;
     }
@@ -209,24 +211,13 @@ body {
 
   .home-nav:hover .home-nav-img,
   .home-nav.active .home-nav-img {
-    /* active 상태에서도 동일한 효과 */
     opacity: 1;
   }
 
   .home-nav:hover .home-nav-name,
   .home-nav.active .home-nav-name {
-    /* active 상태에서도 동일한 효과 */
     color: #ffffff;
     opacity: 1;
-  }
-
-  .home-nav:not(.active) .home-nav-img {
-    filter: none; /* 원래 색상으로 복구 */
-    opacity: 0.7; /* 원래 투명도로 되돌림 */
-  }
-
-  .home-nav:not(.active) .home-nav-name {
-    color: rgba(255, 255, 255, 0.7); /* 원래 색상으로 되돌림 */
   }
 
   @media (max-width: 768px) {
@@ -257,8 +248,8 @@ body {
 .aboutme-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 45px;
-  row-gap: 50px;
+  column-gap: 35px;
+  row-gap: 35px;
   width: 600px;
   margin: 0 auto;
   justify-content: center;
@@ -663,7 +654,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #595959;
+  background-color: #0f0052;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -707,7 +698,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: #0f0052;
   text-align: center;
   padding: 10px;
   color: white;
