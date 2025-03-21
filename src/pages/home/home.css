@@ -16,14 +16,16 @@
 }
 
 body {
-  font-family: var(--font-footer, 'Noto Sans KR', sans-serif);
+  font-family: var(--font-footer, "Noto Sans KR", sans-serif);
 }
 
-/* main (모바일) */
+/* main */
 .home-main {
   width: auto;
   height: auto;
   max-width: 100%;
+
+  /* main (모바일) */
 
   @media (max-width: 768px) {
     .home-main-bg {
@@ -32,36 +34,70 @@ body {
       object-fit: cover;
       position: relative;
     }
+
+    .home-main-logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .home-main-tit {
+      font-weight: var(--font-title-weight-black, 900);
+      font-size: 40px;
+      color: #ffffff;
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+    .home-main-name {
+      font-weight: var(--font-title-weight-black, 900);
+      font-size: 20px;
+      color: #ffffff;
+      position: absolute;
+      text-align: center;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
   }
 
-  .home-main-logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
+  /* main (웹) */
 
-  .home-main-tit {
-    font-weight: var(--font-title-weight-black, 900);
-    font-size: 40px;
-    color: #ffffff;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-  }
+  @media (min-width: 769px) {
+    .home-main-logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
 
-  .home-main-name {
-    font-weight: var(--font-title-weight-black, 900);
-    font-size: 20px;
-    color: #ffffff;
-    position: absolute;
-    text-align: center;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
+    .home-main-tit {
+      font-weight: var(--font-title-weight-black, 900);
+      font-size: 70px;
+      color: #ffffff;
+      position: absolute;
+      text-align: center;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+    .home-main-name {
+      font-weight: var(--font-title-weight-black, 900);
+      font-size: 30px;
+      color: #ffffff;
+      position: absolute;
+      text-align: center;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
   }
 }
 
@@ -69,7 +105,7 @@ body {
 /* 기본 크기 */
 .subtitle {
   font-size: 50px;
-  padding-block: 70px;
+  padding-block: 50px;
   padding-inline: 180px;
   color: #0f0052;
 }
@@ -100,6 +136,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: white;
   width: 280px;
   height: 445px;
@@ -113,7 +150,6 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  margin-top: 50px;
 }
 
 .aboutme-thumbnail-contents {
@@ -124,7 +160,9 @@ body {
   margin-top: 15px;
 
   .aboutme-thumbnail-name {
-    color: black;
+    font-weight: var(--font-title-weight-black, 900);
+    font-size: 30px;
+    color: #0f0052;
     margin: 0;
   }
 
@@ -133,6 +171,7 @@ body {
     height: auto;
     word-break: break-word;
     color: black;
+    font-size: 20px;
   }
 }
 
@@ -170,13 +209,12 @@ body {
     position: relative;
     cursor: pointer;
     width: 1500px;
-    justify-content: center;
-    align-items: center;
 
     .aboutme-desktop {
       display: flex;
       position: relative;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       background: white;
       width: 280px;
@@ -188,8 +226,6 @@ body {
       overflow: visible;
       transition: all 0.3s ease-in-out;
       flex-grow: 0;
-      justify-content: center;
-      align-items: center;
     }
 
     .aboutme {
@@ -218,8 +254,6 @@ body {
       box-shadow: 5px 5px 10px #0f0052;
       padding-inline: 50px;
       flex-grow: 1;
-      justify-content: center;
-      align-items: center;
 
       .aboutme {
         display: flex;
@@ -237,10 +271,10 @@ body {
           align-items: center;
 
           .aboutme-thumbnail-image {
-            display: flex;
+            margin: 0;
+            padding: 0;
             width: 160px;
             height: 280px;
-            transition: all 0.3s ease-in-out;
           }
 
           .aboutme-thumbnail-contents {
@@ -309,8 +343,9 @@ body {
     }
 
     .references-title {
-      font-size: x-large;
-      color: black;
+      font-weight: var(--font-weight-semi-bold, 600);
+      color: #0f0052;
+      font-size: 20px;
       margin: 0;
     }
 
@@ -321,14 +356,15 @@ body {
     }
 
     .references-profile-img {
-      width: 35px;
-      height: 35px;
+      width: 33px;
+      height: 33px;
       border-radius: 50%;
     }
 
     .references-name {
+      font-weight: var(--font-weight-regular, 400);
       color: black;
-      font-size: medium;
+      font-size: 16px;
     }
 
     .references-component:hover {
@@ -337,31 +373,28 @@ body {
   }
 
   /* 웹 요소 숨기기 */
-  .web-refernces-box {
+  .web-refernces-boxs {
     display: none;
   }
 }
 
 /* references web */
 @media (min-width: 769px) {
-  .web-refernces-box {
+  .web-refernces-boxs {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-
-    .web-refernces1 {
-      padding-block: 10px;
-    }
+    gap: 25px;
 
     .web-references-component1 {
       display: flex;
       flex-flow: column wrap;
-      align-items: center;
-      width: 725px;
-      height: 915px;
+      align-items: flex-start;
+      width: 650px;
+      height: 700px;
       border: 2px solid #0f0052;
       border-radius: 20px;
       text-decoration: none;
@@ -369,7 +402,7 @@ body {
     }
 
     .web-references-img1 {
-      width: 725px;
+      width: 650px;
       height: 470px;
       object-fit: cover;
     }
@@ -378,13 +411,15 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      gap: 10px;
+      align-items: center;
+      width: 650px;
+      height: 230px;
     }
 
     .web-references-title1 {
-      font-size: x-large;
-      color: black;
+      font-weight: var(--font-weight-semi-bold, 600);
+      color: #0f0052;
+      font-size: 34px;
       margin: 0;
     }
 
@@ -392,32 +427,36 @@ body {
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-top: 30px;
     }
 
     .web-references-profile-img1 {
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
     }
 
     .web-references-name1 {
+      font-weight: var(--font-weight-regular, 400);
       color: black;
-      font-size: medium;
+      font-size: 20px;
     }
 
     .web-references-component1:hover {
       box-shadow: 5px 5px 10px #0f0052;
     }
 
-    .web-references {
-      padding-block: 10px;
+    .web-references-box {
+      display: flex;
+      flex-flow: column;
+      gap: 22px;
     }
 
     .web-references-component {
       display: flex;
       align-items: center;
-      width: 608px;
-      height: 178px;
+      width: 670px;
+      height: 215px;
       border: 2px solid #0f0052;
       border-radius: 20px;
       text-decoration: none;
@@ -425,11 +464,11 @@ body {
     }
 
     .web-references-img {
-      width: 250px;
-      height: 130px;
+      width: 270px;
+      height: 160px;
       border-radius: 20px;
       object-fit: cover;
-      margin: 25px;
+      margin-inline: 30px;
     }
 
     .web-references-contents {
@@ -441,26 +480,29 @@ body {
     }
 
     .web-references-title {
-      font-size: x-large;
-      color: black;
+      font-weight: var(--font-weight-semi-bold, 600);
+      color: #0f0052;
+      font-size: 24px;
       margin: 0;
     }
 
     .web-references-profile {
       display: flex;
       align-items: center;
-      gap: 10px;
+      padding-block: 10px;
     }
 
     .web-references-profile-img {
-      width: 35px;
-      height: 35px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
+      margin-inline-end: 10px;
     }
 
     .web-references-name {
+      font-weight: var(--font-weight-regular, 400);
       color: black;
-      font-size: medium;
+      font-size: 18px;
     }
 
     .web-references-component:hover {
@@ -479,7 +521,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* 네비게이션 바 (768px 이하에서 보임) */
@@ -525,7 +567,7 @@ body {
 
 /* 뷰포트가 768px 이상일때 */
 .footer-container {
-  font-family: var(--font-footer, 'Noto Sans KR', sans-serif);
+  font-family: var(--font-footer, "Noto Sans KR", sans-serif);
   font-weight: var(--font-footer-weight, 400);
   font-size: var(--font-footer-size, 12px);
   display: flex;
