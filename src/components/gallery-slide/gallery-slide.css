@@ -81,9 +81,7 @@
 
 .prev-btn,
 .next-btn {
-  border-radius: 50%;
-  border: 1px solid gray;
-  color: gray;
-  width: 40px;
-  height: 40px;
+  all: unset;
+  width: 30px;
+  margin-inline: 10px;
 }
