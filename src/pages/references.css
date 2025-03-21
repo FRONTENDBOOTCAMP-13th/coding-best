@@ -3,6 +3,8 @@
 
 body * {
   font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
 }
 
 /* body에 직접 스타일 X, background 클래스로 처리 */
@@ -12,21 +14,48 @@ body * {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 홈 버튼 추가(데스크탑에서만 보임) */
+.home-button {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
 }
 
 .container {
-  margin: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   color: white;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .folder {
-  position: relative;
+  width: 90%; /* 화면 크기에 따라 조정되도록 퍼센트로 변경 */
+  max-width: 1400px; /* 최대 너비 설정 */
+  height: 80vh; /* 화면 높이 기준으로 높이 설정 */
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.tab-container {
+  display: flex;
 }
 
 /* 탭 버튼 공통 스타일 */
@@ -40,7 +69,7 @@ body * {
   margin-left: -15px;
   position: relative;
   z-index: 1;
-
+  background-image: url(/src/assets/reference\(60\)_mob.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,31 +81,34 @@ body * {
   margin-left: 25px;
 }
 
-/* 비활성화 탭 이미지 */
-.css-tab,
-.html-tab,
-.git-tab {
-  background-image: url(/src/assets/reference\(60\)_mob.svg);
-}
-
 /* 활성화 탭 이미지 변경 */
 #css-tab:checked ~ .css-tab,
 #html-tab:checked ~ .html-tab,
-#git-tab:checked ~ .git-tab {
+#git-tab:checked ~ .git-tab,
+#js-tab:checked ~ .js-tab {
   background-image: url(/src/assets/reference\(100\)_mob.svg);
   z-index: 2;
 }
 
+/* 비활성화 탭 이미지 */
+.css-tab,
+.html-tab,
+.git-tab,
+.js-tab {
+  background-image: url(/src/assets/reference\(60\)_mob.svg);
+}
+
 /* 콘텐츠 영역 스타일 */
 .content {
-  width: 100%;
-  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   background-color: white;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: -10px;
+  overflow-y: auto; /* 스크롤 처리 */
+  gap: 10px;
 }
 
 /* Reference 아이템 스타일 */
@@ -119,6 +151,30 @@ body * {
 /* 활성화된 탭의 콘텐츠 표시 */
 #css-tab:checked ~ .content .css-content,
 #html-tab:checked ~ .content .html-content,
-#git-tab:checked ~ .content .git-content {
-  display: block;
+#git-tab:checked ~ .content .git-content,
+#js-tab:checked ~ .content .js-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 미디어 쿼리 (데스크탑 화면) */
+@media screen and (min-width: 768px) {
+  .home-button {
+    display: block; /* 홈버튼 활성화 */
+  }
+
+  .folder {
+    height: 75vh;
+  }
+
+  .tab {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 25px;
+  }
 }

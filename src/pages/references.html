@@ -10,25 +10,29 @@
   <body>
     <!-- 배경 전용 컨테이너 -->
     <div class="background">
+      <a href="#" class="home-button">
+        <img src="/src/assets/home_logo.svg" alt="홈으로 돌아가기 버튼" />
+      </a>
       <!-- 전체 컨테이너 -->
       <div class="container">
         <!-- 타이틀 영역 -->
         <header class="title">
           <h1>REFERENCES</h1>
         </header>
-
         <!-- 콘텐츠 영역 -->
         <main class="folder">
           <!-- 라디오 버튼 (탭 제어용) -->
           <input type="radio" name="tab" id="css-tab" checked hidden />
           <input type="radio" name="tab" id="html-tab" hidden />
           <input type="radio" name="tab" id="git-tab" hidden />
-
-          <!-- 탭 버튼 -->
-          <label for="css-tab" class="tab css-tab">CSS</label>
-          <label for="html-tab" class="tab html-tab">HTML</label>
-          <label for="git-tab" class="tab git-tab">GIT</label>
-
+          <input type="radio" name="tab" id="js-tab" hidden />
+          <div class="tab-container">
+            <!-- 탭 버튼 -->
+            <label for="css-tab" class="tab css-tab">CSS</label>
+            <label for="html-tab" class="tab html-tab">HTML</label>
+            <label for="git-tab" class="tab git-tab">GIT</label>
+            <label for="js-tab" class="tab js-tab">JS</label>
+          </div>
           <!-- 콘텐츠 표시 영역 -->
           <section class="content">
             <!-- CSS 콘텐츠 -->
@@ -44,8 +48,19 @@
             <!-- GIT 콘텐츠 -->
             <div class="content-inner git-content">
               <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B0%9C%EB%85%90-%EC%9B%90%EB%A6%AC-%EC%89%BD%EA%B2%8C%EC%9D%B4%ED%95%B4" class="reference-item" target="_blank">
-                <img src="/src/assets/다운로드.jpeg" alt="썸네일" />
+                <img src="/src/assets/git-use.jpeg" alt="GIT 개념 원리 참고 자료" />
                 <div class="thumbnail-title">GIT-⚡️-개념-원리-쉽게이해</div>
+              </a>
+              <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B0%9C%EB%85%90-%EC%9B%90%EB%A6%AC-%EC%89%BD%EA%B2%8C%EC%9D%B4%ED%95%B4" class="reference-item" target="_blank">
+                <img src="/src/assets/how-to-git-pr.jpeg" alt="GIT PULL REQUEST 참고자료" />
+                <div class="thumbnail-title">GIT-⚡-깃헙-PRPull-Request-보내는-방법</div>
+              </a>
+            </div>
+            <!-- Javascript 콘텐츠 -->
+            <div class="content-inner js-content">
+              <a href="https://springfall.cc/article/2022-10/javascript-smooth-animation" class="reference-item" target="_blank">
+                <img src="/src/assets/js-bm-3.jpeg" alt="Javascrip를 활용한 애니메이션 구현 참고 자료" />
+                <div class="thumbnail-title">Javascript-⚡-스크롤에 따라 애니메이션 구현하기</div>
               </a>
             </div>
           </section>
