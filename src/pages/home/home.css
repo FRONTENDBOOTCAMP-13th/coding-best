@@ -35,23 +35,43 @@ body {
     position: absolute;
     top: 30px;
     left: 30px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .home-main-menu {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-weight: var(--font-title-weight-black, 900);
+    font-size: 15px;
+    gap: 8vw;
+
+    .home-main-menu-name {
+      color: #ffffff;
+      text-decoration: none;
+    }
   }
 
   .home-main-tit {
     font-weight: var(--font-title-weight-black, 900);
-    font-size: 65px;
+    font-size: 60px;
     color: #ffffff;
     position: absolute;
     text-align: center;
-    top: 35%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
   }
 
   .aboutme-thumbnail-line {
+    width: 830px;
     position: absolute;
     text-align: center;
     top: 60%;
@@ -62,7 +82,7 @@ body {
 
   .home-main-name {
     font-weight: var(--font-title-weight-black, 900);
-    font-size: 26px;
+    font-size: 24px;
     color: #ffffff;
     position: absolute;
     text-align: center;
@@ -79,6 +99,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    width: 50px;
   }
 
   /* main (모바일) */
@@ -97,6 +118,10 @@ body {
       left: 30px;
       width: 60px;
       height: 60px;
+    }
+
+    .home-main-menu {
+      display: none;
     }
 
     .home-main-tit {
