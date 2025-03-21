@@ -114,8 +114,8 @@ header nav ul li.active {
 
 .intro-title {
   position: absolute;
-  top: 10vw;
-  left: 15.5vw;
+  top: 150px;
+  left: 135px;
   font-size: 1.5rem;
   color: white;
 }
