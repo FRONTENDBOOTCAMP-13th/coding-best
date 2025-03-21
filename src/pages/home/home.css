@@ -166,7 +166,7 @@ body {
   width: 110px;
   height: 500px;
   background-color: #000000;
-  opacity: 40%;
+  opacity: 50%;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -639,6 +639,8 @@ body {
     display: none;
   }
 }
+
+/* GALLERY */
 
 /* footer */
 /* 기본 스타일 */
