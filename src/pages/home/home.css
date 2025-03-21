@@ -173,6 +173,7 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 
   .home-nav {
     display: flex;
@@ -407,6 +408,7 @@ body {
             padding: 0;
             width: 160px;
             height: 280px;
+            object-fit: cover;
           }
 
           .aboutme-thumbnail-contents {
@@ -697,7 +699,6 @@ body {
   margin-top: 5px;
 }
 
-/* 뷰포트가 768px 이상일때 */
 .footer-container {
   font-family: var(--font-footer, "Noto Sans KR", sans-serif);
   font-weight: var(--font-footer-weight, 400);
@@ -705,9 +706,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -716,7 +714,7 @@ body {
   line-height: 1.5;
 }
 
-/* 뷰포트가 768px 이하일때 */
+/* 뷰포트가 768px 이하일 때만 고정 */
 @media (max-width: 768px) {
   .footer-nav {
     display: flex;
@@ -724,15 +722,18 @@ body {
   .footer-container {
     display: none;
     position: fixed;
+    bottom: 0;
+    left: 0;
   }
 }
 
-/* 768px 이상일 때 적용 */
-@media (min-width: 768px) {
+/* 768px 이상일 때 고정 해제 */
+@media (min-width: 769px) {
   .footer-nav {
     display: none;
   }
   .footer-container {
+    position: static;
     display: flex;
   }
 }
