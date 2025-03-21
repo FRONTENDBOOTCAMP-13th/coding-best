@@ -1,0 +1,218 @@
+@import url(/src/components/footer/footer.css);
+@import url(/src/assets/theme.css);
+
+body * {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+/* body에 직접 스타일 X, background 클래스로 처리 */
+.background {
+  background-image: url(/src/assets/background-img_web.svg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 홈 버튼 추가(데스크탑에서만 보임) */
+.home-button {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.folder {
+  width: 90%; /* 화면 크기에 따라 조정되도록 퍼센트로 변경 */
+  max-width: 1400px; /* 최대 너비 설정 */
+  height: 80vh; /* 화면 높이 기준으로 높이 설정 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+  탭 전환을 위한 라디오 버튼을 화면에서 보이지 않게 처리
+  (hidden 속성 대신, CSS를 통해 숨겨서 키보드 접근성을 유지)
+*/
+.folder > input[type="radio"] {
+  position: absolute; /* 문서 흐름에서 제거하여 레이아웃 영향 없게 함 */
+  opacity: 0; /* 투명하게 만들어 보이지 않도록 처리 */
+  width: 0; /* 너비 0으로 설정하여 시각적 영향 완전 제거 */
+  height: 0; /* 높이 0으로 설정하여 시각적 영향 완전 제거 */
+  margin: 0; /* 마진 제거하여 예상치 못한 간격 없앰 */
+  padding: 0; /* 패딩 제거 */
+  pointer-events: none; /* 마우스 이벤트 무시 (클릭 및 마우스 동작 방지) */
+}
+
+/* 
+  키보드(Tab 키)로 탭에 접근했을 때 포커스 상태 표시
+  사용자가 키보드로 탭 버튼 이동 후 Enter 또는 Space 키로 선택 가능하도록 안내
+*/
+.folder > input[type="radio"]:focus + .tab-container .tab {
+  outline: 3px solid #a5c9ff; /* 포커스 시 탭 버튼 테두리에 밝은 파란색 강조 표시 */
+  outline-offset: 2px; /* 테두리와 탭 버튼 간격 확보로 가독성 향상 */
+  border-radius: 8px; /* 포커스 테두리를 버튼 형태에 맞춰 둥글게 처리 (기존 탭 디자인 유지) */
+}
+
+.tab-container {
+  display: flex;
+}
+
+.tab-container input[type="radio"]:focus + .tab {
+  outline: 3px solid #a5c9ff;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* 탭 버튼 공통 스타일 */
+.tab {
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -15px;
+  position: relative;
+  z-index: 1;
+  background-image: url(/src/assets/reference\(60\)_mob.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.tab-container .tab:hover {
+  background-image: url(/src/assets/reference\(100\)_mob.svg);
+}
+
+/* 첫 번째 탭 왼쪽 마진 보정 */
+.tab:first-of-type {
+  margin-left: 25px;
+}
+
+/* 활성화 탭 이미지 변경 */
+#css-tab:checked ~ .tab-container .css-tab,
+#html-tab:checked ~ .tab-container .html-tab,
+#git-tab:checked ~ .tab-container .git-tab,
+#js-tab:checked ~ .tab-container .js-tab,
+#figma-tab:checked ~ .tab-container .figma-tab {
+  background-image: url(/src/assets/reference\(100\)_mob.svg);
+  z-index: 2;
+}
+
+/* 비활성화 탭 이미지 */
+.css-tab,
+.html-tab,
+.git-tab,
+.js-tab,
+.figma-tab {
+  background-image: url(/src/assets/reference\(60\)_mob.svg);
+}
+
+/* 콘텐츠 영역 스타일 */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: -10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* 스크롤 처리 */
+  gap: 10px;
+}
+
+/* Reference 아이템 스타일 */
+.reference-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.reference-item:hover {
+  background-color: #f8f8f8;
+}
+
+/* 썸네일 이미지 스타일 */
+.reference-item img {
+  width: 120px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 썸네일 제목 스타일 */
+.reference-item .thumbnail-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 콘텐츠 기본 상태 숨김 */
+.content-inner {
+  display: none;
+}
+
+/* 활성화된 탭의 콘텐츠 표시 */
+#css-tab:checked ~ .content .css-content,
+#html-tab:checked ~ .content .html-content,
+#git-tab:checked ~ .content .git-content,
+#js-tab:checked ~ .content .js-content,
+#figma-tab:checked ~ .content .figma-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 미디어 쿼리 (데스크탑 화면) */
+@media (min-width: 768px) {
+  .home-button {
+    display: block; /* 홈버튼 활성화 */
+  }
+
+  .folder {
+    height: 75vh;
+  }
+
+  .tab {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 25px;
+  }
+}
