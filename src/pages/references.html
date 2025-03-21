@@ -7,63 +7,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/pages/references.css" />
   </head>
-  <body class="background">
-    <!-- 전체 컨테이너 -->
-    <div class="container">
-      <!-- 타이틀: REFERENCES -->
-      <header class="title">
-        <h1>REFERENCES</h1>
-      </header>
+  <body>
+    <!-- 배경 전용 컨테이너 -->
+    <div class="background">
+      <!-- 전체 컨테이너 -->
+      <div class="container">
+        <!-- 타이틀 영역 -->
+        <header class="title">
+          <h1>REFERENCES</h1>
+        </header>
 
-      <!-- 컨텐츠 -->
-      <main class="folder">
-        <!-- 탭 버튼용 radio -->
-        <input type="radio" name="tab" id="css-tab" checked hidden />
-        <input type="radio" name="tab" id="html-tab" hidden />
-        <input type="radio" name="tab" id="git-tab" hidden />
+        <!-- 콘텐츠 영역 -->
+        <main class="folder">
+          <!-- 라디오 버튼 (탭 제어용) -->
+          <input type="radio" name="tab" id="css-tab" checked hidden />
+          <input type="radio" name="tab" id="html-tab" hidden />
+          <input type="radio" name="tab" id="git-tab" hidden />
 
-        <!-- 탭 버튼 라벨 -->
-        <label for="css-tab" class="tab css-tab">CSS</label>
-        <label for="html-tab" class="tab html-tab">HTML</label>
-        <label for="git-tab" class="tab git-tab">GIT</label>
+          <!-- 탭 버튼 -->
+          <label for="css-tab" class="tab css-tab">CSS</label>
+          <label for="html-tab" class="tab html-tab">HTML</label>
+          <label for="git-tab" class="tab git-tab">GIT</label>
 
-        <!-- 콘텐츠 박스를 탭 버튼과 함께 같은 main에 넣어 자연스럽게 보이도록 구현 -->
-        <section class="content">
-          <div class="content-inner">
-            <!-- 실제 콘텐츠 내용 -->
-          </div>
-        </section>
-      </main>
-    </div>
-    <footer>
-      <!-- 뷰포트가 768px 이하일때 -->
-      <nav class="footer-nav">
-        <a href="#" class="footer-item">
-          <img src="/src/assets/home_logo.svg" alt="home" />
-          <span>HOME</span>
-        </a>
-        <a href="#" class="footer-item">
-          <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
-          <span>ABOUT ME</span>
-        </a>
-        <a href="#" class="footer-item">
-          <img src="/src/assets/references_logo.svg" alt="references" />
-          <span>REFERENCES</span>
-        </a>
-        <a href="#" class="footer-item">
-          <img src="/src/assets/gallery_logo.svg" alt="gallery" />
-          <span>GALLERY</span>
-        </a>
-      </nav>
+          <!-- 콘텐츠 표시 영역 -->
+          <section class="content">
+            <!-- CSS 콘텐츠 -->
+            <div class="content-inner css-content">
+              <a href="#" class="reference-item">CSS 관련 자료</a>
+            </div>
 
-      <!-- 뷰포트가 768px 이상일때 -->
-      <div class="footer-container">
-        <p>
-          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
-          <br />
-          © 2025 IMWA. All Rights Reserved.
-        </p>
+            <!-- HTML 콘텐츠 -->
+            <div class="content-inner html-content">
+              <a href="#" class="reference-item">HTML 관련 자료</a>
+            </div>
+
+            <!-- GIT 콘텐츠 -->
+            <div class="content-inner git-content">
+              <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B0%9C%EB%85%90-%EC%9B%90%EB%A6%AC-%EC%89%BD%EA%B2%8C%EC%9D%B4%ED%95%B4" class="reference-item" target="_blank">
+                <img src="/src/assets/다운로드.jpeg" alt="썸네일" />
+                <div class="thumbnail-title">GIT-⚡️-개념-원리-쉽게이해</div>
+              </a>
+            </div>
+          </section>
+        </main>
       </div>
-    </footer>
+
+      <!-- Footer 영역 -->
+      <footer>
+        <!-- 모바일(768px 이하) 메뉴 -->
+        <nav class="footer-nav">
+          <a href="#" class="footer-item">
+            <img src="/src/assets/home_logo.svg" alt="home" />
+            <span>HOME</span>
+          </a>
+          <a href="#" class="footer-item">
+            <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
+            <span>ABOUT ME</span>
+          </a>
+          <a href="#" class="footer-item">
+            <img src="/src/assets/references_logo.svg" alt="references" />
+            <span>REFERENCES</span>
+          </a>
+          <a href="#" class="footer-item">
+            <img src="/src/assets/gallery_logo.svg" alt="gallery" />
+            <span>GALLERY</span>
+          </a>
+        </nav>
+
+        <!-- 데스크탑(768px 이상) -->
+        <div class="footer-container">
+          <p>
+            본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+            <br />
+            © 2025 IMWA. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
