@@ -17,6 +17,7 @@
 
 body {
   font-family: var(--font-footer, "Noto Sans KR", sans-serif);
+  scroll-behavior: smooth;
 }
 
 /* main */
@@ -155,6 +156,80 @@ body {
     .aboutme-thumbnail-arrow {
       display: none;
     }
+  }
+}
+
+/* nav */
+.home-nav-box {
+  display: flex;
+  flex-flow: column wrap;
+  width: 120px;
+  height: 500px;
+  background-color: #000000;
+  opacity: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .home-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+
+    .home-nav-img {
+      opacity: 70%;
+    }
+
+    .home-nav-about {
+      width: 36px;
+    }
+
+    .home-nav-references {
+      width: 31px;
+    }
+
+    .home-nav-gallery {
+      width: 33px;
+    }
+
+    .home-nav-name {
+      font-weight: var(--font-weight-semi-bold, 600);
+      font-size: 15px;
+      color: #ffffff;
+      opacity: 70%;
+    }
+  }
+
+  .home-nav:hover .home-nav-img,
+  .home-nav.active .home-nav-img {
+    /* active 상태에서도 동일한 효과 */
+    opacity: 1;
+  }
+
+  .home-nav:hover .home-nav-name,
+  .home-nav.active .home-nav-name {
+    /* active 상태에서도 동일한 효과 */
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .home-nav:not(.active) .home-nav-img {
+    filter: none; /* 원래 색상으로 복구 */
+    opacity: 0.7; /* 원래 투명도로 되돌림 */
+  }
+
+  .home-nav:not(.active) .home-nav-name {
+    color: rgba(255, 255, 255, 0.7); /* 원래 색상으로 되돌림 */
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 

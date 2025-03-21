@@ -47,309 +47,346 @@
       />
     </div>
 
-    <!-- aboutme -->
-    <h2 class="subtitle">ABOUT ME</h2>
+    <!-- nav -->
+    <nav class="home-nav-box">
+      <div class="home-nav" data-target="section1">
+        <img
+          class="home-nav-img home-nav-about"
+          src="/src/assets/home_nav_logo(about).svg"
+          alt=""
+        />
+        <p class="home-nav-name">ABOUT</p>
+      </div>
+      <div class="home-nav" data-target="section2">
+        <img
+          class="home-nav-img home-nav-references"
+          src="/src/assets/home_nav_logo(references).svg"
+          alt=""
+        />
+        <p class="home-nav-name">REFERENCES</p>
+      </div>
+      <div class="home-nav" data-target="section3">
+        <img
+          class="home-nav-img home-nav-gallery"
+          src="/src/assets/home_nav_logo(gallery).svg"
+          alt=""
+        />
+        <p class="home-nav-name">GALLERY</p>
+      </div>
+    </nav>
 
-    <!-- aboutme (모바일) -->
-    <div class="aboutme-container">
-      <div class="aboutme-mobile">
-        <a href="/" style="text-decoration: none">
-          <img
-            class="aboutme-thumbnail-image"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="프로필 이미지"
-          />
-          <div class="aboutme-thumbnail-contents">
-            <p class="aboutme-thumbnail-name">박정우</p>
-            <p class="aboutme-thumbnail-text">
-              안녕하세요! 저는 프론트엔드 개발자입니다.
-            </p>
-          </div>
-        </a>
+    <!-- 외부 JavaScript 파일 연결 -->
+    <script src="/src/pages/home/home.js"></script>
+
+    <section id="section1">
+      <!-- aboutme -->
+      <h2 class="subtitle">ABOUT ME</h2>
+
+      <!-- aboutme (모바일) -->
+      <div class="aboutme-container">
+        <div class="aboutme-mobile">
+          <a href="/" style="text-decoration: none">
+            <img
+              class="aboutme-thumbnail-image"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="프로필 이미지"
+            />
+            <div class="aboutme-thumbnail-contents">
+              <p class="aboutme-thumbnail-name">박정우</p>
+              <p class="aboutme-thumbnail-text">
+                안녕하세요! 저는 프론트엔드 개발자입니다.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="aboutme-mobile">
+          <a href="/" style="text-decoration: none">
+            <img
+              class="aboutme-thumbnail-image"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="프로필 이미지"
+            />
+            <div class="aboutme-thumbnail-contents">
+              <p class="aboutme-thumbnail-name">황수곤</p>
+              <p class="aboutme-thumbnail-text">
+                UI/UX 디자인과 웹 개발을 좋아합니다.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="aboutme-mobile">
+          <a href="/" style="text-decoration: none">
+            <img
+              class="aboutme-thumbnail-image"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="프로필 이미지"
+            />
+            <div class="aboutme-thumbnail-contents">
+              <p class="aboutme-thumbnail-name">김혜민</p>
+              <p class="aboutme-thumbnail-text">React를 좋아합니다.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="aboutme-mobile">
+          <a href="/" style="text-decoration: none">
+            <img
+              class="aboutme-thumbnail-image"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="프로필 이미지"
+            />
+            <div class="aboutme-thumbnail-contents">
+              <p class="aboutme-thumbnail-name">장유하</p>
+              <p class="aboutme-thumbnail-text">
+                실력있는 개발자로 성장하고 싶습니다.
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <div class="aboutme-mobile">
-        <a href="/" style="text-decoration: none">
-          <img
-            class="aboutme-thumbnail-image"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="프로필 이미지"
-          />
-          <div class="aboutme-thumbnail-contents">
-            <p class="aboutme-thumbnail-name">황수곤</p>
-            <p class="aboutme-thumbnail-text">
-              UI/UX 디자인과 웹 개발을 좋아합니다.
-            </p>
+      <!-- aboutme (데스크탑) -->
+      <div class="line-container">
+        <div class="line"></div>
+
+        <!-- 카드 리스트 (데스크탑 레이아웃) -->
+        <div class="cards-desktop">
+          <div class="aboutme-desktop">
+            <a class="aboutme" href="/" style="text-decoration: none">
+              <div class="dot"></div>
+              <div class="aboutme-thumbnail">
+                <img
+                  class="aboutme-thumbnail-image"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 이미지"
+                />
+                <div class="aboutme-thumbnail-contents">
+                  <p class="aboutme-thumbnail-name">박정우</p>
+                  <p class="aboutme-thumbnail-text">
+                    안녕하세요! 저는 프론트엔드 개발자입니다.
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
 
-      <div class="aboutme-mobile">
-        <a href="/" style="text-decoration: none">
-          <img
-            class="aboutme-thumbnail-image"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="프로필 이미지"
-          />
-          <div class="aboutme-thumbnail-contents">
-            <p class="aboutme-thumbnail-name">김혜민</p>
-            <p class="aboutme-thumbnail-text">React를 좋아합니다.</p>
+          <div class="aboutme-desktop">
+            <a class="aboutme" href="/" style="text-decoration: none">
+              <div class="dot"></div>
+              <div class="aboutme-thumbnail">
+                <img
+                  class="aboutme-thumbnail-image"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 이미지"
+                />
+                <div class="aboutme-thumbnail-contents">
+                  <p class="aboutme-thumbnail-name">황수곤</p>
+                  <p class="aboutme-thumbnail-text">
+                    안녕하세요! 저는 프론트엔드 개발자입니다.
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
 
-      <div class="aboutme-mobile">
-        <a href="/" style="text-decoration: none">
-          <img
-            class="aboutme-thumbnail-image"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="프로필 이미지"
-          />
-          <div class="aboutme-thumbnail-contents">
-            <p class="aboutme-thumbnail-name">장유하</p>
-            <p class="aboutme-thumbnail-text">
-              실력있는 개발자로 성장하고 싶습니다.
-            </p>
+          <div class="aboutme-desktop">
+            <a class="aboutme" href="/" style="text-decoration: none">
+              <div class="dot"></div>
+              <div class="aboutme-thumbnail">
+                <img
+                  class="aboutme-thumbnail-image"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 이미지"
+                />
+                <div class="aboutme-thumbnail-contents">
+                  <p class="aboutme-thumbnail-name">김혜민</p>
+                  <p class="aboutme-thumbnail-text">
+                    안녕하세요! 저는 프론트엔드 개발자입니다.
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
+
+          <div class="aboutme-desktop">
+            <a class="aboutme" href="/" style="text-decoration: none">
+              <div class="dot"></div>
+              <div class="aboutme-thumbnail">
+                <img
+                  class="aboutme-thumbnail-image"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 이미지"
+                />
+                <div class="aboutme-thumbnail-contents">
+                  <p class="aboutme-thumbnail-name">장유하</p>
+                  <p class="aboutme-thumbnail-text">
+                    안녕하세요! 저는 프론트엔드 개발자입니다.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- aboutme (데스크탑) -->
-    <div class="line-container">
-      <div class="line"></div>
+    <section id="section2">
+      <!-- REFERENCES -->
+      <h2 class="subtitle">REFERENCES</h2>
 
-      <!-- 카드 리스트 (데스크탑 레이아웃) -->
-      <div class="cards-desktop">
-        <div class="aboutme-desktop">
-          <a class="aboutme" href="/" style="text-decoration: none">
-            <div class="dot"></div>
-            <div class="aboutme-thumbnail">
-              <img
-                class="aboutme-thumbnail-image"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 이미지"
-              />
-              <div class="aboutme-thumbnail-contents">
-                <p class="aboutme-thumbnail-name">박정우</p>
-                <p class="aboutme-thumbnail-text">
-                  안녕하세요! 저는 프론트엔드 개발자입니다.
-                </p>
+      <!-- references mob -->
+      <div class="refernces-box">
+        <div class="refernces">
+          <a class="references-component" href="/">
+            <img
+              class="references-img"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="references-contents">
+              <h2 class="references-title">참고자료 제목</h2>
+              <div class="references-profile">
+                <img
+                  class="references-profile-img"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="references-name">name</span>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="aboutme-desktop">
-          <a class="aboutme" href="/" style="text-decoration: none">
-            <div class="dot"></div>
-            <div class="aboutme-thumbnail">
-              <img
-                class="aboutme-thumbnail-image"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 이미지"
-              />
-              <div class="aboutme-thumbnail-contents">
-                <p class="aboutme-thumbnail-name">황수곤</p>
-                <p class="aboutme-thumbnail-text">
-                  안녕하세요! 저는 프론트엔드 개발자입니다.
-                </p>
+        <div class="refernces">
+          <a class="references-component" href="/">
+            <img
+              class="references-img"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="references-contents">
+              <h2 class="references-title">참고자료 제목</h2>
+              <div class="references-profile">
+                <img
+                  class="references-profile-img"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="references-name">name</span>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="aboutme-desktop">
-          <a class="aboutme" href="/" style="text-decoration: none">
-            <div class="dot"></div>
-            <div class="aboutme-thumbnail">
-              <img
-                class="aboutme-thumbnail-image"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 이미지"
-              />
-              <div class="aboutme-thumbnail-contents">
-                <p class="aboutme-thumbnail-name">김혜민</p>
-                <p class="aboutme-thumbnail-text">
-                  안녕하세요! 저는 프론트엔드 개발자입니다.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="aboutme-desktop">
-          <a class="aboutme" href="/" style="text-decoration: none">
-            <div class="dot"></div>
-            <div class="aboutme-thumbnail">
-              <img
-                class="aboutme-thumbnail-image"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 이미지"
-              />
-              <div class="aboutme-thumbnail-contents">
-                <p class="aboutme-thumbnail-name">장유하</p>
-                <p class="aboutme-thumbnail-text">
-                  안녕하세요! 저는 프론트엔드 개발자입니다.
-                </p>
+        <div class="refernces">
+          <a class="references-component" href="/">
+            <img
+              class="references-img"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="references-contents">
+              <h2 class="references-title">참고자료 제목</h2>
+              <div class="references-profile">
+                <img
+                  class="references-profile-img"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="references-name">name</span>
               </div>
             </div>
           </a>
         </div>
       </div>
-    </div>
 
-    <!-- REFERENCES -->
-    <h2 class="subtitle">REFERENCES</h2>
-
-    <!-- references mob -->
-    <div class="refernces-box">
-      <div class="refernces">
-        <a class="references-component" href="/">
-          <img
-            class="references-img"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="references-contents">
-            <h2 class="references-title">참고자료 제목</h2>
-            <div class="references-profile">
-              <img
-                class="references-profile-img"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="references-name">name</span>
+      <!-- references web -->
+      <div class="web-refernces-boxs">
+        <div class="web-references1">
+          <a class="web-references-component1" href="/">
+            <img
+              class="web-references-img1"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="web-references-contents1">
+              <h2 class="web-references-title1">참고자료 제목</h2>
+              <div class="web-references-profile1">
+                <img
+                  class="web-references-profile-img1"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="web-references-name1">name</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
+        <div class="web-references-box">
+          <a class="web-references-component" href="/">
+            <img
+              class="web-references-img"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="web-references-contents">
+              <h2 class="web-references-title">참고자료 제목</h2>
+              <div class="web-references-profile">
+                <img
+                  class="web-references-profile-img"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="web-references-name">name</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="web-references-component" href="/">
+            <img
+              class="web-references-img"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="web-references-contents">
+              <h2 class="web-references-title">참고자료 제목</h2>
+              <div class="web-references-profile">
+                <img
+                  class="web-references-profile-img"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="web-references-name">name</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="web-references-component" href="/">
+            <img
+              class="web-references-img"
+              src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+              alt="참고자료 이미지"
+            />
+            <div class="web-references-contents">
+              <h2 class="web-references-title">참고자료 제목</h2>
+              <div class="web-references-profile">
+                <img
+                  class="web-references-profile-img"
+                  src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
+                  alt="프로필 사진"
+                />
+                <span class="web-references-name">name</span>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
+    </section>
 
-      <div class="refernces">
-        <a class="references-component" href="/">
-          <img
-            class="references-img"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="references-contents">
-            <h2 class="references-title">참고자료 제목</h2>
-            <div class="references-profile">
-              <img
-                class="references-profile-img"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="references-name">name</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="refernces">
-        <a class="references-component" href="/">
-          <img
-            class="references-img"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="references-contents">
-            <h2 class="references-title">참고자료 제목</h2>
-            <div class="references-profile">
-              <img
-                class="references-profile-img"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="references-name">name</span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- references web -->
-    <div class="web-refernces-boxs">
-      <div class="web-references1">
-        <a class="web-references-component1" href="/">
-          <img
-            class="web-references-img1"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="web-references-contents1">
-            <h2 class="web-references-title1">참고자료 제목</h2>
-            <div class="web-references-profile1">
-              <img
-                class="web-references-profile-img1"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="web-references-name1">name</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="web-references-box">
-        <a class="web-references-component" href="/">
-          <img
-            class="web-references-img"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="web-references-contents">
-            <h2 class="web-references-title">참고자료 제목</h2>
-            <div class="web-references-profile">
-              <img
-                class="web-references-profile-img"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="web-references-name">name</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="web-references-component" href="/">
-          <img
-            class="web-references-img"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="web-references-contents">
-            <h2 class="web-references-title">참고자료 제목</h2>
-            <div class="web-references-profile">
-              <img
-                class="web-references-profile-img"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="web-references-name">name</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="web-references-component" href="/">
-          <img
-            class="web-references-img"
-            src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-            alt="참고자료 이미지"
-          />
-          <div class="web-references-contents">
-            <h2 class="web-references-title">참고자료 제목</h2>
-            <div class="web-references-profile">
-              <img
-                class="web-references-profile-img"
-                src="https://i.pinimg.com/236x/f7/db/15/f7db1537e0e39de83589912d4d42e57a.jpg"
-                alt="프로필 사진"
-              />
-              <span class="web-references-name">name</span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+    <section id="section3">여기가 섹션 3</section>
 
     <!-- footer -->
     <footer class="footer">
