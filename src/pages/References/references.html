@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Footer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/pages/References/references.css" />
+  </head>
+  <body>
+    <!-- 배경 전용 컨테이너 -->
+    <div class="background">
+      <a href="/src/pages/home/home.html" class="home-button">
+        <img src="/src/assets/home_logo.svg" alt="홈으로 돌아가기 버튼" />
+      </a>
+      <!-- 전체 컨테이너 -->
+      <div class="container">
+        <!-- 타이틀 영역 -->
+        <header class="title">
+          <h1>REFERENCES</h1>
+        </header>
+        <!-- 콘텐츠 영역 -->
+        <main class="folder">
+          <!-- 라디오 버튼 (탭 제어용) -->
+          <div class="tab-container">
+            <!-- 탭 버튼 -->
+            <input type="radio" name="tab" id="css-tab" checked />
+            <label for="css-tab" class="tab css-tab">CSS</label>
+            <input type="radio" name="tab" id="html-tab" />
+            <label for="html-tab" class="tab html-tab">HTML</label>
+            <input type="radio" name="tab" id="git-tab" />
+            <label for="git-tab" class="tab git-tab">GIT</label>
+            <input type="radio" name="tab" id="js-tab" />
+            <label for="js-tab" class="tab js-tab">JS</label>
+            <input type="radio" name="tab" id="figma-tab" />
+            <label for="figma-tab" class="tab figma-tab">Figma</label>
+          </div>
+          <!-- 콘텐츠 표시 영역 -->
+          <section class="content">
+            <!-- CSS 콘텐츠 -->
+            <div class="content-inner css-content">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y" class="reference-item" target="_blank">
+                <img src="/src/assets/overflow-y-mdn.jpeg" alt="overflow-y MDN 공식 문서" />
+                <div class="thumbnail-title">overflow-y</div>
+              </a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout" class="reference-item" target="_blank">
+                <img src="/src/assets/masonry-layout.jpeg" alt="masonry MDN 공식 문서" />
+                <div class="thumbnail-title">Masonry layout</div>
+              </a>
+              <a href="https://inpa.tistory.com/entry/CSS-%F0%9F%93%9A-%EA%B7%B8%EB%A6%AC%EB%93%9CGrid-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC" class="reference-item" target="_blank">
+                <img src="/src/assets/css-grid.jpeg" alt="grid 참고 자료" />
+                <div class="thumbnail-title">CSS-📚-그리드Grid-💯-총정리</div>
+              </a>
+              <a
+                href="https://velog.io/@rkio/CSS-%EB%AC%B4%ED%95%9C-%EB%A1%9C%EA%B3%A0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0"
+                class="reference-item"
+                target="_blank"
+              >
+                <img src="/src/assets/css-carousel-slide.png" alt="css 캐러셀 슬라이드 참고 자료" />
+                <div class="thumbnail-title">CSS-무한-로고-슬라이드-구현하기</div>
+              </a>
+              <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts" class="reference-item" target="_blank">
+                <img src="/src/assets/css-Handling-conflicts.jpeg" alt="css 우선순위 상속 MDN 페이지" />
+                <div class="thumbnail-title">우선순위 상속</div>
+              </a>
+              <a href="https://velog.io/@methejohn/CSS-%EA%B7%B8%EB%A6%AC%EB%93%9C-fr%EA%B3%BC-auto%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="reference-item" target="_blank">
+                <img src="/src/assets/css-grid2.png" alt="css 참고자료" />
+                <div class="thumbnail-title">CSS-그리드-fr과-auto의-차이점</div>
+              </a>
+            </div>
+
+            <!-- HTML 콘텐츠 -->
+            <div class="content-inner html-content">
+              <a href="https://www.tcpschool.com/html-tag-attrs/input-checked" class="reference-item" target="_blank">
+                <img src="/src/assets/input-checked.jpeg" alt="input요소의 checked 속성 참고 자료" />
+                <div class="thumbnail-title">input 태그의 checked 속성</div>
+              </a>
+            </div>
+
+            <!-- GIT 콘텐츠 -->
+            <div class="content-inner git-content">
+              <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B0%9C%EB%85%90-%EC%9B%90%EB%A6%AC-%EC%89%BD%EA%B2%8C%EC%9D%B4%ED%95%B4" class="reference-item" target="_blank">
+                <img src="/src/assets/git-use.jpeg" alt="GIT 개념 원리 참고 자료" />
+                <div class="thumbnail-title">GIT-⚡️-개념-원리-쉽게이해</div>
+              </a>
+              <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B0%9C%EB%85%90-%EC%9B%90%EB%A6%AC-%EC%89%BD%EA%B2%8C%EC%9D%B4%ED%95%B4" class="reference-item" target="_blank">
+                <img src="/src/assets/how-to-git-pr.jpeg" alt="GIT PULL REQUEST 참고자료" />
+                <div class="thumbnail-title">GIT-⚡-깃헙-PRPull-Request-보내는-방법</div>
+              </a>
+            </div>
+            <!-- Javascript 콘텐츠 -->
+            <div class="content-inner js-content">
+              <a href="https://springfall.cc/article/2022-10/javascript-smooth-animation" class="reference-item" target="_blank">
+                <img src="/src/assets/js-bm-3.jpeg" alt="Javascrip를 활용한 애니메이션 구현 참고 자료" />
+                <div class="thumbnail-title">[Javascript]스크롤에 따라 애니메이션 구현하기</div>
+              </a>
+            </div>
+            <!-- Figma 콘텐츠 -->
+            <div class="content-inner figma-content">
+              <a href="https://help.figma.com/hc/ko/articles/15023124644247-%EA%B0%9C%EB%B0%9C-%EB%AA%A8%EB%93%9C-%EA%B0%80%EC%9D%B4%EB%93%9C" class="reference-item" target="_blank">
+                <img src="/src/assets/figma-dev-mode.jpeg" alt="피그마 개발자모드 가이드 공식 문서" />
+                <div class="thumbnail-title">Figma 개발자 모드 가이드</div>
+              </a>
+              <a href="https://wmckorea.tistory.com/8" class="reference-item" target="_blank">
+                <img src="/src/assets/figma-command.jpeg" alt="피그마 단축키 모음 참고 자료" />
+                <div class="thumbnail-title">피그마 주요 단축키</div>
+              </a>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer 영역 -->
+      <footer>
+        <!-- 모바일(768px 이하) 메뉴 -->
+        <nav class="footer-nav">
+          <a href="/src/pages/home/home.html" class="footer-item">
+            <img src="/src/assets/home_logo.svg" alt="home" />
+            <span>HOME</span>
+          </a>
+          <a href="#" class="footer-item">
+            <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
+            <span>ABOUT ME</span>
+          </a>
+          <a href="#" class="footer-item">
+            <img src="/src/assets/references_logo.svg" alt="references" />
+            <span>REFERENCES</span>
+          </a>
+          <a href="#" class="footer-item">
+            <img src="/src/assets/gallery_logo.svg" alt="gallery" />
+            <span>GALLERY</span>
+          </a>
+        </nav>
+
+        <!-- 데스크탑(768px 이상) -->
+        <div class="footer-container">
+          <p>
+            본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+            <br />
+            © 2025 IMWA. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
