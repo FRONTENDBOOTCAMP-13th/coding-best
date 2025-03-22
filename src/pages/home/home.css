@@ -652,7 +652,7 @@ body {
   .gallery-wrapper {
     display: flex;
     overflow: hidden;
-    width: 1348px;
+    width: 1360px;
   }
 }
 
@@ -676,7 +676,7 @@ body {
   width: 320px;
   height: 400px;
   border-radius: 20px;
-  border: 0.1rem solid gainsboro;
+  border: 2px solid #0f0052;
   text-decoration: none;
 
   .gallery-img {
@@ -712,7 +712,7 @@ body {
 }
 
 .gallery-component:hover {
-  box-shadow: 5px 5px 10px gray;
+  box-shadow: 5px 5px 10px #0f0052;
 }
 
 .home-gallery-button-container {
@@ -772,7 +772,7 @@ body {
     width: 290px;
     height: 380px;
     border-radius: 20px;
-    border: 0.1rem solid gainsboro;
+    border: 2px solid #0f0052;
     text-decoration: none;
 
     .gallery-img {
@@ -808,7 +808,7 @@ body {
   }
 
   .gallery-component:hover {
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px #0f0052;
   }
 
   .home-gallery-button-container {

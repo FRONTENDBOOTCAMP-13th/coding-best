@@ -2,6 +2,55 @@
 // 모든 네비게이션 버튼과 섹션 가져오기
 const navItems = document.querySelectorAll(".home-nav");
 const sections = document.querySelectorAll("section");
+document.addEventListener("DOMContentLoaded", () => {
+  const navItems = document.querySelectorAll(".footer-item");
+  const sections = document.querySelectorAll("section");
+
+  // 🔥 네비게이션 클릭 시 해당 섹션으로 이동 및 active 추가
+  navItems.forEach((navItem) => {
+    navItem.addEventListener("click", function (event) {
+      event.preventDefault(); // 기본 동작 방지
+
+      // 기존 활성화된 버튼에서 active 클래스 제거
+      navItems.forEach((item) => item.classList.remove("active"));
+
+      // 현재 클릭된 버튼에 active 클래스 추가
+      this.classList.add("active");
+
+      // HOME 버튼이면 페이지 맨 위로 이동
+      const targetId = this.getAttribute("data-target");
+      if (targetId === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    });
+  });
+
+  // 🔥 현재 섹션 감지하여 네비게이션 active 변경 (선택적 기능)
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // 모든 navItem에서 active 제거 후 현재 섹션과 일치하는 버튼에 active 추가
+          navItems.forEach((navItem) => {
+            if (navItem.getAttribute("data-target") === entry.target.id) {
+              navItems.forEach((item) => item.classList.remove("active"));
+              navItem.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  // 모든 섹션을 감지 대상으로 설정
+  sections.forEach((section) => observer.observe(section));
+});
 
 // 🔥 Intersection Observer 설정 (스크롤 시 활성화)
 const observer = new IntersectionObserver(
