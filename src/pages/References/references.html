@@ -10,7 +10,7 @@
   <body>
     <!-- 배경 전용 컨테이너 -->
     <div class="background">
-      <a href="#" class="home-button">
+      <a href="/src/pages/home/home.html" class="home-button">
         <img src="/src/assets/home_logo.svg" alt="홈으로 돌아가기 버튼" />
       </a>
       <!-- 전체 컨테이너 -->
@@ -22,17 +22,17 @@
         <!-- 콘텐츠 영역 -->
         <main class="folder">
           <!-- 라디오 버튼 (탭 제어용) -->
-          <input type="radio" name="tab" id="css-tab" checked />
-          <input type="radio" name="tab" id="html-tab" hidden />
-          <input type="radio" name="tab" id="git-tab" hidden />
-          <input type="radio" name="tab" id="js-tab" hidden />
-          <input type="radio" name="tab" id="figma-tab" hidden />
           <div class="tab-container">
             <!-- 탭 버튼 -->
+            <input type="radio" name="tab" id="css-tab" checked />
             <label for="css-tab" class="tab css-tab">CSS</label>
+            <input type="radio" name="tab" id="html-tab" />
             <label for="html-tab" class="tab html-tab">HTML</label>
+            <input type="radio" name="tab" id="git-tab" />
             <label for="git-tab" class="tab git-tab">GIT</label>
+            <input type="radio" name="tab" id="js-tab" />
             <label for="js-tab" class="tab js-tab">JS</label>
+            <input type="radio" name="tab" id="figma-tab" />
             <label for="figma-tab" class="tab figma-tab">Figma</label>
           </div>
           <!-- 콘텐츠 표시 영역 -->
@@ -114,7 +114,7 @@
       <footer>
         <!-- 모바일(768px 이하) 메뉴 -->
         <nav class="footer-nav">
-          <a href="#" class="footer-item">
+          <a href="/src/pages/home/home.html" class="footer-item">
             <img src="/src/assets/home_logo.svg" alt="home" />
             <span>HOME</span>
           </a>
