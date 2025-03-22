@@ -2,13 +2,13 @@
 @import url("/src/assets/theme.css");
 
 /* background 미디어쿼리 */
-body {
+.background {
   height: 865px;
   background-image: url("/src/assets/background-img_web.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-body::after {
+.background::after {
   content: "";
   position: absolute;
   top: 0;
