@@ -1,6 +1,22 @@
-@import "tailwindcss";
+@import url(./components/aboutme/aboutme-component.css);
+@import url(./components/button/button-component.css);
+@import url(./components/footer/footer.css);
+@import url(./components/gallery/gallery-component.css);
+@import url(./components/home/home.css);
+@import url(./components/portfolio/portfolio-component.css);
+@import url(./components/references/references-component.css);
+@import url(./components/subtitle/subtitle-component.css);
+@import url(./pages/home/home.css);
+@import url(./pages/References/references.css);
+@import url(./pages/gallery/gallery.css);
+body {
+  font-family: var(--font-family);
+}
 
-@theme{
-  --font-sans: "Pretendard Variable", sans-serif;
+.component-list {
+  list-style-type: none;
+}
 
+.page-list {
+  list-style-type: none;
 }
