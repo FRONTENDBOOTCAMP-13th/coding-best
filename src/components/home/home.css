@@ -1,4 +1,4 @@
-@import url("/src/assets/resets/theme.css");
+@import url("/src/assets/theme.css");
 
 /* body-wrappers 컴포넌트 */
 .body-wrapper {
@@ -83,7 +83,9 @@ nav ul li a {
   text-align: center;
   font-size: var(--font-body-size);
   border-radius: 10px;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
   position: absolute;
   top: 19rem;
 }
