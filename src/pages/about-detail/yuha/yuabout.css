@@ -280,12 +280,12 @@ header nav ul li.active {
 }
 
 .story-item .story1 {
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
 }
 
 .story-item .story2 {
-  width: 60%;
+  width: 63%;
   border-radius: 10px;
 }
 
@@ -690,6 +690,16 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+  }
+
+  .final-goal {
+    font-size: 1.8rem;
+  }
+
+  .goal-description {
+    font-size: 1rem;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .portfolio-title {
