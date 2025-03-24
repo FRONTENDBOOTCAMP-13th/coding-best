@@ -122,7 +122,13 @@ body * {
   }
 }
 
-footer {
-  position: relative; /* 꼭 있어야 z-index가 적용됨 */
-  z-index: 1;
+/* 768px 이상일 때 footer 고정 해제 */
+@media (min-width: 769px) {
+  .footer-nav {
+    display: none;
+  }
+  .footer-container {
+    position: static;
+    display: flex;
+  }
 }
