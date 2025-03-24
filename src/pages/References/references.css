@@ -120,6 +120,7 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: -40px;
   margin-left: -15px;
   position: relative;
   z-index: 1;
@@ -167,6 +168,7 @@ footer {
   border-radius: 20px;
   padding: 20px;
   margin-top: -10px;
+  margin-bottom: 50px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   overflow-y: auto; /* 스크롤 처리 */
   gap: 10px;
@@ -238,5 +240,6 @@ footer {
 
   .content {
     padding: 25px;
+    margin-bottom: 0px;
   }
 }
