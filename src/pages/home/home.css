@@ -267,8 +267,8 @@ body {
   width: 35vw;
   height: 53vw;
   border: 2px solid #0f0052;
-  border-top-right-radius: 8vw;
-  border-end-start-radius: 8vw;
+  border-top-right-radius: 7vw;
+  border-end-start-radius: 7vw;
 }
 
 .aboutme-box {
@@ -283,6 +283,7 @@ body {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .aboutme-thumbnail-contents {
@@ -458,12 +459,12 @@ body {
           .aboutme-thumbnail-name {
             font-weight: var(--font-title-weight-black, 900);
             color: #0f0052;
-            font-size: 2vw;
+            font-size: 2.2vw;
           }
 
           .aboutme-thumbnail-text {
             font-weight: var(--font-weight-medium, 500);
-            font-size: 1.3vw;
+            font-size: 1.2vw;
           }
         }
       }
@@ -591,7 +592,7 @@ body {
     .web-references-title1 {
       font-weight: var(--font-weight-semi-bold, 600);
       color: #0f0052;
-      font-size: 1.8vw;
+      font-size: 2vw;
       margin-top: 3vw;
     }
 
@@ -610,7 +611,7 @@ body {
     .web-references-name1 {
       font-weight: var(--font-weight-regular, 400);
       color: black;
-      font-size: 1.2vw;
+      font-size: 1.3vw;
     }
 
     .web-references-component1:hover {
@@ -726,7 +727,7 @@ body {
 
   .gallery-img {
     width: 100%;
-    height: 19vw;
+    height: 18.5vw;
     border-top-left-radius: 1.3vw;
     border-top-right-radius: 1.3vw;
     object-fit: cover;
@@ -746,12 +747,13 @@ body {
       height: 5vw;
       border-radius: 50%;
       border: 0.3vw solid white;
+      object-fit: cover;
     }
     .gallery-name {
       font-weight: var(--font-weight-bold, 700);
-      font-size: 1.5vw;
+      font-size: 1.3vw;
       color: #0f0052;
-      margin-top: 0.2vw;
+      margin-top: 0.3vw;
     }
   }
 }
@@ -842,6 +844,7 @@ body {
         height: 9vw;
         border-radius: 50%;
         border: 0.5vw solid white;
+        object-fit: cover;
       }
       .gallery-name {
         font-weight: var(--font-weight-bold, 700);
