@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pages = document.querySelectorAll(".page");
   const navItems = document.querySelectorAll("header nav ul li");
   const navLinks = document.querySelectorAll("header nav ul li a");
+  const music = document.getElementById("bg-music");
 
   let currentPageIndex = 0;
   let isScrolling = false;
@@ -86,6 +87,17 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       showPage(index);
     });
+  });
+  // 자동 재생 시도
+  music.play().catch(() => {
+    // 실패하면 사용자 클릭 시 재생 (브라우저 보안 정책 우회)
+    document.body.addEventListener(
+      "click",
+      () => {
+        music.play();
+      },
+      { once: true }
+    );
   });
 
   // 페이지 초기 표시
