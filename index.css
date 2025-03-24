@@ -1,0 +1,128 @@
+body {
+  margin-bottom: 30px;
+  padding: 20px;
+
+  h1 {
+    padding-bottom: 40px;
+  }
+}
+
+.css-style-list {
+  display: grid;
+  position: relative;
+  align-items: start;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    columns: 4;
+    margin: 10px;
+    column-rule: 1px solid black;
+    list-style-type: none;
+
+    .comp-link-btn {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    padding: 0 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: white;
+  }
+}
+
+.html-markup-list {
+  display: grid;
+  position: relative;
+  align-items: start;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    columns: 4 auto;
+    margin: 10px;
+    column-rule: 1px solid black;
+    list-style-type: none;
+
+    .page-link-btn {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    padding: 0, 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: white;
+  }
+}
+
+.project-memorise {
+  display: grid;
+  position: relative;
+  align-items: start;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    columns: 4 auto;
+    margin: 10px;
+    column-rule: 1px solid black;
+    list-style-type: none;
+
+    .page-link-btn {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    padding: 0, 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: white;
+  }
+}
+
+.project-main {
+  display: grid;
+  position: relative;
+  align-items: start;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    columns: 4 auto;
+    margin: 10px;
+    column-rule: 1px solid black;
+    list-style-type: none;
+
+    .page-link-btn {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    padding: 0, 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: white;
+  }
+}
