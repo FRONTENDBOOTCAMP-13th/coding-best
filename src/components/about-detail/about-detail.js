@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPageIndex = 0;
   let isScrolling = false;
 
-  // ✅ 새로고침 시 첫 번째 페이지 강제 표시
   function initPage() {
     bodyWrapper.classList.add("show-page-1");
     pages[0].style.opacity = "1";
