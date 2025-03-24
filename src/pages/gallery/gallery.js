@@ -1,5 +1,5 @@
 const grid = document.querySelector(".gallery-masonry");
-const items = document.querySelectorAll(".cat");
+const items = document.querySelectorAll(".gallery-figure");
 
 window.addEventListener("load", () => {
   items.forEach((item) => {
