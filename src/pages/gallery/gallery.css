@@ -1,6 +1,10 @@
 @import url("/src/components/footer/footer.css");
 @import url("/src/assets/theme.css");
 
+body * {
+  font-family: var(--font-family);
+}
+
 /* background 미디어쿼리 */
 .background-gallery {
   height: 865px;
@@ -19,8 +23,9 @@
   z-index: -1;
 }
 
+/* 768px 이상일 때 background 더 밝게 조정 0.75>0.6 */
 @media (min-width: 768px) {
-  body::after {
+  .background-gallery::after {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
@@ -45,15 +50,11 @@
 .gallery-title {
   display: flex;
   justify-content: center;
-  font-family: "Noto Sans";
+  font-family: var(--font-family);
   font-weight: var(--m-gallery-font-size);
-  font-weight: 900;
+  font-weight: var(--font-weight-black);
   color: #ffffff;
   margin-top: 30px;
-
-  @media (min-width: 768px) {
-    font-weight: var(--font-weight-black);
-  }
 }
 
 /* gallery-masonry */
@@ -62,10 +63,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   background: white;
+  height: 800px;
   margin: 30px;
   padding: 15px;
   border-radius: 15px;
-  height: 665px;
   overflow-y: auto; /*gallery-masonry 외부로 넘친 FIGURE 스크롤 해서 볼 수 있도록*/
   grid-auto-rows: masonry;
 
@@ -78,25 +79,24 @@
     border-radius: 5px;
     height: 680px;
   }
-  /* 800px 이상 */
+  /* 800px 이상 colums:4 */
   @media (min-width: 800px) {
     grid-template-columns: repeat(4, 1fr);
   }
-
+  /* 1080px 이상 colums:5 */
   @media (min-width: 1080px) {
     grid-template-columns: repeat(5, 1fr);
   }
-
+  /* 1440px 이상 colums:6 */
   @media (min-width: 1440px) {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  figure {
+  .gallery-figure {
     display: flex;
     position: relative;
     flex-direction: column;
     border-radius: 10px;
-    border: 0.1rem solid gainsboro;
     height: fit-content;
     margin: 0;
     padding: 0;
@@ -105,17 +105,18 @@
       width: 100%;
       height: fit-content;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: inherit;
     }
 
-    figcaption {
+    /* 이미지 title */
+    .gallery-figcaption {
       position: absolute;
       bottom: 0;
       background: rgba(0, 0, 0, 0.7);
       color: white;
       place-self: center;
       border-radius: 5px;
-      margin-bottom: 5px;
+      margin: 5px;
     }
   }
 }
