@@ -131,7 +131,7 @@ header nav ul li.active {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
   padding: 20px;
   border-radius: 15px;
@@ -280,13 +280,21 @@ header nav ul li.active {
 }
 
 .story-item .story1 {
-  width: 80%;
+  width: 300px;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+  }
 }
 
 .story-item .story2 {
-  width: 60%;
+  width: 300px;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+  }
 }
 
 /* PORTFOLIO 페이지 스타일 */
@@ -360,7 +368,7 @@ header nav ul li.active {
 }
 
 .contact-img {
-  width: 15vw;
+  width: 35vw;
   height: auto;
   margin-bottom: 1vh;
 }
@@ -702,6 +710,17 @@ body {
     width: 40vw;
     height: auto;
     margin-bottom: 1vh;
+  }
+  .final-goal {
+    font-size: 2rem;
+    margin-top: -75px;
+  }
+
+  .goal-description {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
   }
 }
 
