@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Footer</title>
+    <title>Referencs</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="./references.css" />
   </head>
   <body>
-    <!-- 배경 전용 컨테이너 -->
     <div class="background">
+      <div class="background-overlay"></div>
+      <!-- 타이틀 영역 -->
+      <header class="title">
+        <h2>REFERENCES</h2>
+      </header>
       <a href="/src/pages/home/home.html" class="home-button">
-        <img src="/src/assets/home_logo.svg" alt="홈으로 돌아가기 버튼" />
+        <img src="/src/assets/home_logo.svg" alt="홈으로 돌아가기 버튼" class="home-logo" />
       </a>
       <!-- 전체 컨테이너 -->
       <div class="container">
-        <!-- 타이틀 영역 -->
-        <header class="title">
-          <h1>REFERENCES</h1>
-        </header>
         <!-- 콘텐츠 영역 -->
         <main class="folder">
           <!-- 라디오 버튼 (탭 제어용) -->
@@ -68,7 +68,6 @@
                 <div class="thumbnail-title">CSS-그리드-fr과-auto의-차이점</div>
               </a>
             </div>
-
             <!-- HTML 콘텐츠 -->
             <div class="content-inner html-content">
               <a href="https://www.tcpschool.com/html-tag-attrs/input-checked" class="reference-item" target="_blank">
@@ -76,7 +75,6 @@
                 <div class="thumbnail-title">input 태그의 checked 속성</div>
               </a>
             </div>
-
             <!-- GIT 콘텐츠 -->
             <div class="content-inner git-content">
               <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B0%9C%EB%85%90-%EC%9B%90%EB%A6%AC-%EC%89%BD%EA%B2%8C%EC%9D%B4%ED%95%B4" class="reference-item" target="_blank">
@@ -109,38 +107,38 @@
           </section>
         </main>
       </div>
-
-      <!-- Footer 영역 -->
-      <footer>
-        <!-- 모바일(768px 이하) 메뉴 -->
-        <nav class="footer-nav">
-          <a href="/src/pages/home/home.html" class="footer-item">
-            <img src="/src/assets/home_logo.svg" alt="home" />
-            <span>HOME</span>
-          </a>
-          <a href="#" class="footer-item">
-            <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
-            <span>ABOUT ME</span>
-          </a>
-          <a href="#" class="footer-item">
-            <img src="/src/assets/references_logo.svg" alt="references" />
-            <span>REFERENCES</span>
-          </a>
-          <a href="#" class="footer-item">
-            <img src="/src/assets/gallery_logo.svg" alt="gallery" />
-            <span>GALLERY</span>
-          </a>
-        </nav>
-
-        <!-- 데스크탑(768px 이상) -->
-        <div class="footer-container">
-          <p>
-            본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
-            <br />
-            © 2025 IMWA. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
     </div>
+
+    <!-- Footer 영역 -->
+    <footer>
+      <!-- 모바일(768px 이하) 메뉴 -->
+      <nav class="footer-nav">
+        <a href="/src/pages/home/home.html" class="footer-item">
+          <img src="/src/assets/home_logo.svg" alt="home" />
+          <span>HOME</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/aboutme_logo.svg" alt="aboutme" />
+          <span>ABOUT ME</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/references_logo.svg" alt="references" />
+          <span>REFERENCES</span>
+        </a>
+        <a href="#" class="footer-item">
+          <img src="/src/assets/gallery_logo.svg" alt="gallery" />
+          <span>GALLERY</span>
+        </a>
+      </nav>
+
+      <!-- 데스크탑(768px 이상) -->
+      <div class="footer-container">
+        <p>
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+          <br />
+          © 2025 IMWA. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

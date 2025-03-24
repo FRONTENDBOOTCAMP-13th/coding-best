@@ -11,10 +11,16 @@
 @import url(./pages/gallery/gallery.css);
 body {
   font-family: var(--font-family);
+  margin: 20px;
+  padding: 20px;
 }
 
+.components-title {
+  margin-top: 30px;
+}
 .component-list {
   list-style-type: none;
+  margin-bottom: 30px;
 }
 
 .page-list {
