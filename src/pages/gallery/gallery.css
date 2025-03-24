@@ -11,6 +11,8 @@ body * {
   background-image: url("/src/assets/background-img_web.svg");
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 .background-gallery::after {
   content: "";
@@ -63,7 +65,7 @@ body * {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   background: white;
-  height: 800px;
+  height: 780px;
   margin: 30px;
   padding: 15px;
   border-radius: 15px;
@@ -77,7 +79,6 @@ body * {
 
   @media (min-width: 768px) {
     border-radius: 5px;
-    height: 680px;
   }
   /* 800px 이상 colums:4 */
   @media (min-width: 800px) {
@@ -119,4 +120,9 @@ body * {
       margin: 5px;
     }
   }
+}
+
+footer {
+  position: relative; /* 꼭 있어야 z-index가 적용됨 */
+  z-index: 1;
 }
