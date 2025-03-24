@@ -9,7 +9,6 @@
 @import url(./pages/home/home.css);
 @import url(./pages/References/references.css);
 @import url(./pages/gallery/gallery.css);
-@import url(./pages/about-detail/about-detail.css);
 @import url(../index.css);
 body {
   font-family: var(--font-family);
