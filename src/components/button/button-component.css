@@ -1,0 +1,147 @@
+/* 모바일 버튼 컴포넌트 */
+/* 전체보기 버튼 컴포넌트 */
+
+.mobbutton-fullview {
+  all: unset;
+  display: inline-block;
+  font-size: 22px;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+
+.mobbutton-fullview::after {
+  content: ">";
+  font-size: 1em;
+  margin-left: 5px;
+}
+
+.mobbutton-fullview:hover {
+  color: #121212;
+}
+
+/* 레퍼런스 파일 버튼 컴포넌트 */
+
+.mobbutton-references {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+}
+
+.mobbutton-referencesimg {
+  width: 100%;
+}
+
+.mobbutton-referencesname {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 13px;
+}
+
+/* 레퍼런스 목록 버튼 컴포넌트 */
+
+.mobbutton-box {
+  display: flex;
+  border-radius: 30px;
+  border: solid 1px #bcb7b7;
+  padding-inline: 20px;
+  padding-block: 25px;
+  align-items: center;
+  cursor: pointer;
+
+  .mobbutton-img {
+    display: inherit;
+    width: 140px;
+    height: 90px;
+    border-radius: 30px;
+    border: solid 1px #bcb7b7;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobbutton-list {
+    flex-flow: column wrap;
+    padding-left: 10px;
+  }
+  .mobbutton-listtitle {
+    font-size: 1 6px;
+  }
+  .mobbutton-listname {
+    font-size: 14px;
+  }
+}
+
+/* 웹 버튼 컴포넌트 */
+/* 전체보기 버튼 컴포넌트 */
+
+.webbutton-fullview {
+  all: unset;
+  display: inline-block;
+  font-size: 40px;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+
+.webbutton-fullview::after {
+  content: ">";
+  font-size: 1em;
+  margin-left: 5px;
+}
+
+.webbutton-fullview:hover {
+  color: #121212;
+}
+
+/* 레퍼런스 파일 버튼 컴포넌트 */
+
+.webbutton-references {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+}
+
+.webbutton-referencesimg {
+  width: 100%;
+}
+
+.webbutton-referencesname {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 20px;
+}
+
+/* 레퍼런스 목록 버튼 컴포넌트 */
+
+.webbutton-box {
+  display: flex;
+  border-radius: 50px;
+  border: solid 1px #bcb7b7;
+  padding-inline: 60px;
+  padding-block: 30px;
+  align-items: center;
+  cursor: pointer;
+
+  .webbutton-img {
+    display: inherit;
+    width: 275px;
+    height: 140px;
+    border-radius: 50px;
+    border: solid 1px #bcb7b7;
+    align-items: center;
+    justify-content: center;
+  }
+  .webbutton-list {
+    flex-flow: column wrap;
+    padding-left: 25px;
+  }
+  .webbutton-listtitle {
+    font-size: 25px;
+  }
+  .webbutton-listname {
+    font-size: 20px;
+  }
+}

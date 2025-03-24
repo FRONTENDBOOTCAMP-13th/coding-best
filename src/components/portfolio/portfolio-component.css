@@ -1,0 +1,28 @@
+.portfolio-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 285px;
+  height: 370px;
+  border: 0.1rem solid gainsboro;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.portfolio-img {
+  width: 285px;
+  height: 265px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.portfolio-title {
+  color: black;
+  font-weight: medium;
+  font-size: 24px;
+}
+
+.portfolio-component:hover {
+  box-shadow: 5px 5px 10px gray;
+}

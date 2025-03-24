@@ -1,0 +1,54 @@
+/* 홈화면 references */
+.references-component {
+  display: flex;
+  align-items: center;
+  width: 608px;
+  height: 178px;
+  border: 0.1rem solid gainsboro;
+  border-radius: 20px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.references-img {
+  width: 250px;
+  height: 130px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 25px;
+}
+
+.references-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.references-title {
+  font-size: x-large;
+  color: black;
+  margin: 0;
+}
+
+.references-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.references-profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.references-name {
+  color: black;
+  font-size: medium;
+}
+
+.references-component:hover {
+  box-shadow: 5px 5px 10px gray;
+}
