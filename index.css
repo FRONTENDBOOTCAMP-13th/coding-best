@@ -1,13 +1,21 @@
 body {
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 15px;
   background-image: url(/src/assets/background-img_web.svg);
 
   h1 {
-    padding-bottom: 40px;
     color: white;
     display: flex;
     justify-content: center;
+    font-size: 85px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 35px;
   }
 }
 body::after {
@@ -22,11 +30,13 @@ body::after {
 }
 
 .index-container {
-  padding: 10px;
+  padding: 23px;
   background: #faf8fff1;
   height: fit-content;
   border-radius: 15px;
+  overflow: hidden;
 }
+
 /* 컴포넌트 리스트 */
 .css-style-list {
   display: grid;
@@ -51,7 +61,7 @@ body::after {
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -61,10 +71,13 @@ body::after {
     background: white;
   }
 }
+
+/* 소제목 스타일링 */
 .text-components {
   border-radius: 15px;
   padding: 0 10px;
 }
+
 /* 프로젝트 상세 페이지 리스트 */
 .html-markup-list {
   display: grid;
@@ -89,7 +102,7 @@ body::after {
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -99,6 +112,7 @@ body::after {
     background: white;
   }
 }
+
 /* 회고록 */
 .project-memorise {
   display: grid;
@@ -123,7 +137,43 @@ body::after {
     }
   }
 
-  h2 {
+  h3 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    padding: 0, 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: white;
+  }
+}
+
+/* 보고서 */
+.report {
+  display: grid;
+  position: relative;
+  align-items: start;
+  border: 2px solid #0f0052;
+  background: #1c0845;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #0f0052;
+  /* width: fit-content; */
+
+  ul {
+    columns: 4 auto;
+    margin: 10px;
+    column-rule: 1px solid black;
+    list-style-type: none;
+
+    .page-link-btn {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -158,7 +208,7 @@ body::after {
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -168,6 +218,7 @@ body::after {
     background: white;
   }
 }
+
 /* aboutme 상세페이지 드롭다운 */
 .dropdown {
   position: relative;
@@ -231,6 +282,7 @@ body::after {
     }
   }
 }
+
 /* 깃허브 링크 로고 */
 .github {
   display: flex;
