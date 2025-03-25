@@ -37,10 +37,14 @@ header {
   margin-top: var(--nav-top-margin);
   text-align: center;
   z-index: 10;
+  position: relative;
 }
 
 .nav-home-button {
   margin-right: 1rem;
+  position: absolute;
+  left: 8vw;
+  top: 1.3vh;
 }
 
 .nav-home-button img {
@@ -56,6 +60,8 @@ header {
 
 nav ul {
   display: flex;
+  position: absolute;
+  left: 15vw;
   list-style: none;
   justify-content: center;
   flex-wrap: nowrap;
@@ -87,7 +93,7 @@ header nav ul li.active {
 
 /* 페이지 스타일 */
 .page {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +120,7 @@ header nav ul li.active {
 
 .intro-title {
   position: absolute;
-  top: 150px;
+  top: 9.3vh;
   left: 135px;
   font-size: 1.5rem;
   color: white;

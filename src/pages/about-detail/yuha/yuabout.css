@@ -29,6 +29,7 @@
 }
 
 /* header 컴포넌트*/
+/* header 컴포넌트*/
 header {
   position: fixed;
   top: -30px;
@@ -37,10 +38,14 @@ header {
   margin-top: var(--nav-top-margin);
   text-align: center;
   z-index: 10;
+  position: relative;
 }
 
 .nav-home-button {
   margin-right: 1rem;
+  position: absolute;
+  left: 8vw;
+  top: 1.3vh;
 }
 
 .nav-home-button img {
@@ -56,6 +61,8 @@ header {
 
 nav ul {
   display: flex;
+  position: absolute;
+  left: 15vw;
   list-style: none;
   justify-content: center;
   flex-wrap: nowrap;
