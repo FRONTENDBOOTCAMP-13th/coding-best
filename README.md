@@ -8,6 +8,14 @@
 
 이 프로젝트를 고안하게 되었고 실제 프로젝트 기간동안 다양한 일상들을 기록(Archive)하여 꾸며보았습니다.
 
+## 팀원 소개
+
+|                   황수곤                    |                    박정우                     |                 장유하                  |                   김혜민                    |
+| :-----------------------------------------: | :-------------------------------------------: | :-------------------------------------: | :-----------------------------------------: |
+|              팀장,스크럼마스터              |                     팀원                      |                  팀원                   |                    팀원                     |
+| [sugonhwang](https://github.com/sugonhwang) | [jungwoo0601](https://github.com/jungwoo0601) |    [yuha2](https://github.com/yuha2)    |   [minixzip](https://github.com/minixzip)   |
+|  ![](/src/assets/aboutme/sugon/sugon2.svg)  | ![](/src/assets/aboutme/jungwoo/jungwoo2.svg) | ![](/src/assets/aboutme/yuha/yuha2.svg) | ![](/src/assets/aboutme/haemin/haemin2.svg) |
+
 ## 목표
 
 - 생생한 개발 과정들을 기록하여 하나의 웹 아카이브 만들기
