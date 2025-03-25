@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
@@ -6,19 +6,11 @@
     <title>home</title>
     <script type="module" src="/src/main.js"></script>
     <link rel="icon" href="/src/assets/favicon/imwa.svg" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
-    />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" />
   </head>
   <body class="body-wrapper">
     <div class="background-container">
-      <img
-        src="/images/home.png"
-        alt="홈 배경 이미지"
-        class="background-image"
-      />
+      <img src="/src/assets/background-img_web.svg" alt="홈 배경 이미지" class="background-image" />
     </div>
 
     <header>
@@ -33,71 +25,16 @@
       </nav>
     </header>
 
-    <div class="sidebar">
-      <nav>
-        <ul>
-          <li>
-            <img class="userlogo" src="/public/images/user.svg" alt="user">
-            <a href="#">ABOUT </a>
-          </li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </nav>
-    </div>
-
     <div class="container">
       <h1>"Hello World" <br />Dreams come true</h1>
       <div>
-        <img src="/images/homeline.png" alt="line" class="homeline" />
+        <img src="/src/assets/home_line.svg" alt="line" class="homeline" />
       </div>
       <div>
-        <img src="/images/homecheck.png" alt="check" class="homecheck" />
+        <img src="/src/assets/home_arrow.svg" alt="check" class="homecheck" />
       </div>
     </div>
 
-    <section class="about-section">
-        <div class="header">
-            <h2>About</h2>
-        </div>
-        <div class="timeline">
-            <div class="progress-line"></div>
-            <div class="card-container">
-                <div class="dot"></div>
-                <div class="card large">
-                    <div class="circle"></div>
-                    <div class="line w-16"></div>
-                    <div class="line w-20"></div>
-                    <div class="line w-18"></div>
-                    <div class="line w-14"></div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="dot"></div>
-                <div class="card">
-                    <div class="circle small"></div>
-                    <div class="line w-16"></div>
-                    <div class="line w-12"></div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="dot"></div>
-                <div class="card">
-                    <div class="circle small"></div>
-                    <div class="line w-16"></div>
-                    <div class="line w-12"></div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="dot"></div>
-                <div class="card">
-                    <div class="circle small"></div>
-                    <div class="line w-16"></div>
-                    <div class="line w-12"></div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
       <div class="footer-container">
         <p>
@@ -105,6 +42,7 @@
           <br />
           © 2025 IMWA. All Rights Reserved.
         </p>
+      </div>
     </footer>
 
     <script src="home.js"></script>
