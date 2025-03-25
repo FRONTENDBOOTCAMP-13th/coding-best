@@ -436,7 +436,7 @@ body {
 .footer-container {
   font-family: var(--font-footer, "Noto Sans KR", sans-serif);
   font-weight: var(--font-footer-weight, 400);
-  font-size: 10px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,7 +447,7 @@ body {
   height: 10px;
   background: rgba(15, 0, 82, 0.5);
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   color: white;
   line-height: 1.5;
   display: flex;
