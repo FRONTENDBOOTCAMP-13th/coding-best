@@ -1,19 +1,53 @@
 body {
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 15px;
+  background-image: url(/src/assets/background-img_web.svg);
 
   h1 {
-    padding-bottom: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 85px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 35px;
   }
 }
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
 
+.index-container {
+  padding: 23px;
+  background: #faf8fff1;
+  height: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* 컴포넌트 리스트 */
 .css-style-list {
   display: grid;
   position: relative;
   align-items: start;
-  border: 1px solid black;
+  border: 2px solid #1c0845;
+  background: #1c0845;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  color: #0f0052;
 
   ul {
     columns: 4;
@@ -23,10 +57,11 @@ body {
 
     .comp-link-btn {
       text-decoration: none;
+      color: white;
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -37,13 +72,23 @@ body {
   }
 }
 
+/* 소제목 스타일링 */
+.text-components {
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+/* 프로젝트 상세 페이지 리스트 */
 .html-markup-list {
   display: grid;
   position: relative;
   align-items: start;
-  border: 1px solid black;
+  border: 2px solid #0f0052;
+  background: #1c0845;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  color: #0f0052;
 
   ul {
     columns: 4 auto;
@@ -53,10 +98,11 @@ body {
 
     .page-link-btn {
       text-decoration: none;
+      color: white;
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -67,13 +113,17 @@ body {
   }
 }
 
+/* 회고록 */
 .project-memorise {
   display: grid;
   position: relative;
   align-items: start;
-  border: 1px solid black;
+  border: 2px solid #0f0052;
+  background: #1c0845;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  color: #0f0052;
 
   ul {
     columns: 4 auto;
@@ -83,10 +133,11 @@ body {
 
     .page-link-btn {
       text-decoration: none;
+      color: white;
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -97,13 +148,18 @@ body {
   }
 }
 
-.project-main {
+/* 보고서 */
+.report {
   display: grid;
   position: relative;
   align-items: start;
-  border: 1px solid black;
+  border: 2px solid #0f0052;
+  background: #1c0845;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  color: #0f0052;
+  /* width: fit-content; */
 
   ul {
     columns: 4 auto;
@@ -113,10 +169,11 @@ body {
 
     .page-link-btn {
       text-decoration: none;
+      color: white;
     }
   }
 
-  h2 {
+  h3 {
     position: absolute;
     top: -20px;
     left: 15px;
@@ -125,4 +182,119 @@ body {
     font-weight: bold;
     background: white;
   }
+}
+
+/* 스크럼 */
+.project-scrum {
+  display: grid;
+  position: relative;
+  align-items: start;
+  border: 2px solid #0f0052;
+  background: #1c0845;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #0f0052;
+
+  ul {
+    columns: 4 auto;
+    margin: 10px;
+    column-rule: 1px solid black;
+    list-style-type: none;
+
+    .comp-link-btn {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    padding: 0, 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: white;
+  }
+}
+
+/* aboutme 상세페이지 드롭다운 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  /* border: 2px solid #0f0052; */
+  border: none;
+  border-radius: 30px;
+  background-color: #fbf9fd;
+  color: #0f0052;
+  padding: 12px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1; /*다른 요소들보다 앞에 배치*/
+  font-weight: 400;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  border: 0.0625rem solid #0f0052;
+}
+
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+  font-size: 12px;
+  padding: 12px 20px;
+  font-weight: 600;
+}
+
+.dropdown-content a:hover {
+  background-color: #ececec;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 메인프로젝트 */
+.project-main {
+  border-radius: 50px;
+  border: 3px solid #1c0845;
+  background: #fbf9fd;
+  width: fit-content;
+
+  margin-bottom: 20px;
+
+  padding: 20px;
+
+  .main-link {
+    text-decoration: none;
+    .main-text {
+      color: #1c0845;
+    }
+  }
+}
+
+/* 깃허브 링크 로고 */
+.github {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.memo-btn {
+  color: white;
+  text-decoration: none;
 }

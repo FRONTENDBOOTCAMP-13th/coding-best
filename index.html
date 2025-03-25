@@ -1,44 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UI 프로젝트</title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <title>코딩짱되고10조 프로젝트</title>
+    <link rel="icon" href="/src/assets/IMWA-BLACK.png" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <h1>Project: In My WEB ARCHIVE</h1>
-    <div class="css-style-list">
-      <h2>컴포넌트 리스트</h2>
-      <ul>
-        <li><a class="comp-link-btn" href="./src/components/aboutme/aboutme-component.html">ABOUT ME 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/button/button-component.html">Button 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/footer/footer.html">footer 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/gallery/gallery-component.html">gallery 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/home/home.html">home 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/portfolio/portfolio-component.html">포트폴리오 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/references/references-component.html">레퍼런스 컴포넌트</a></li>
-        <li><a class="comp-link-btn" href="./src/components/subtitle/subtitle-component.html">소제목 컴포넌트</a></li>
-      </ul>
-    </div>
-    <div class="html-markup-list">
-      <h2>프로젝트 상세 페이지 리스트</h2>
-      <ul>
-        <li><a class="page-link-btn" href="./src/pages/about-detail/about-detail.html">ABOUT ME 상세 페이지</a></li>
-        <li><a class="page-link-btn" href="./src/pages/gallery/gallery.html">gallery 상세 페이지</a></li>
-        <li><a class="page-link-btn" href="./src/pages/home/home.html">Home 메인 페이지</a></li>
-        <li><a class="page-link-btn" href="./src/pages/References/references.html">references 상세 페이지</a></li>
-      </ul>
-    </div>
-    <div class="project-memorise">
-      <h2>회고록</h2>
-    </div>
-    <div class="project-main">
-      <h2>메인 프로젝트</h2>
+    <h1>IMWA</h1>
+    <h2>In My WEB ARCHIVE</h2>
+    <div class="index-container">
+      <div class="css-style-list">
+        <h3 class="text-components">COMPONENTS</h3>
+        <ul>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="./src/components/aboutme/aboutme-component.html"
+              >ABOUT ME 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="./src/components/button/button-component.html"
+              >Button 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a class="comp-link-btn" href="./src/components/footer/footer.html"
+              >footer 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="./src/components/gallery/gallery-component.html"
+              >gallery 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a class="comp-link-btn" href="./src/components/home/home.html"
+              >home 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="./src/components/portfolio/portfolio-component.html"
+              >포트폴리오 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="./src/components/references/references-component.html"
+              >레퍼런스 컴포넌트</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="./src/components/subtitle/subtitle-component.html"
+              >소제목 컴포넌트</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="html-markup-list">
+        <h3 class="text-components">DETAIL PAGE</h3>
+        <ul>
+          <li>
+            <a class="page-link-btn" href="./src/pages/home/home.html"
+              >Home 메인 페이지</a
+            >
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span class="dropbtn_icon"></span>
+              ABOUT ME
+            </button>
+            <div class="dropdown-content">
+              <a href="/src/pages/about-detail/jungwoo/jungabout.html"
+                >JUNGWOO</a
+              >
+              <a href="/src/pages/about-detail/sugon/suabout.html">SUGON</a>
+              <a href="/src/pages/about-detail/yuha/yuabout.html">YUHA</a>
+              <a href="/src/pages/about-detail/haemin/haeabout.html">HAEMIN</a>
+            </div>
+          </div>
+          <li>
+            <a class="page-link-btn" href="./src/pages/gallery/gallery.html"
+              >gallery 상세 페이지</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="page-link-btn"
+              href="./src/pages/References/references.html"
+              >references 상세 페이지</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-scrum">
+        <h3 class="text-components">SCRUM</h3>
+        <ul>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-14-1b573873401a8032aed0c957b594bf28"
+              >3/14</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-17-1b873873401a80168cbfd55e31aa5a23"
+              >3/17</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-18-1b973873401a80f58fa5d3a2fe9b8500"
+              >3/18</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-19-1ba73873401a8038b8c3c56d8a9dc7d6"
+              >3/19</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-20-1bc73873401a808faf35c3d30c95c49d"
+              >3/20</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-21-1bc73873401a80e090b5c5091d1bcd23"
+              >3/23</a
+            >
+          </li>
+          <li>
+            <a
+              class="comp-link-btn"
+              href="https://www.notion.so/25-03-24-1c073873401a8075970dd5b26149c8e8"
+              >3/24</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="project-memorise">
+        <h3 class="text-components">MEMORISE</h3>
+        <ul>
+          <li>
+            <a
+              class="memo-btn"
+              href="https://www.notion.so/1c073873401a80888c17fb01aaec3bf2"
+              >수곤</a
+            >
+          </li>
+          <li>
+            <a
+              class="memo-btn"
+              href="https://www.notion.so/1c073873401a80e896bef23ac5d1c81f"
+              >유하</a
+            >
+          </li>
+          <li>
+            <a
+              class="memo-btn"
+              href="https://www.notion.so/1c073873401a8075b351d8b6ca3d447d"
+              >정우</a
+            >
+          </li>
+          <li>
+            <a
+              class="memo-btn"
+              href="https://www.notion.so/1bf73873401a80499b6cc21943801965"
+              >혜민</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="report">
+        <h3 class="text-components">REPORT</h3>
+        <ul>
+          <li>
+            <a
+              class="memo-btn"
+              href="https://www.notion.so/1c173873401a8076b3bfd6239082a713"
+              >검사 보고서</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="icon">
+        <div class="project-main">
+          <a class="main-link" href="/src/pages/home/home.html">
+            <h3 class="main-text">♥In My WEB ARCHIVE♥</h3></a
+          >
+        </div>
+      </div>
+      <div class="github">
+        <a href="https://github.com/FRONTENDBOOTCAMP-13th/coding-best"
+          ><img src="/src/assets/github.svg" alt="깃허브 로고"
+        /></a>
+      </div>
     </div>
   </body>
 </html>
